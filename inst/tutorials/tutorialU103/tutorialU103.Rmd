@@ -1,6 +1,6 @@
 ---
-title: "Tipos de variables"
-author: dgonzalez80- [Web-U101]()
+title: "Representación gráfica"
+author: dgonzalez80- [Web-U102]()
 output: 
   learnr::tutorial:
     css: css/learnr_metadocencia.css
@@ -24,16 +24,6 @@ c4="#E09600" # AMARILLO
 c5="#BC2B6A" # MORADO
 
 ```
-
-## Presentación y Bienvenida 
-
-```{r, echo=FALSE, out.width="100%", fig.align = "center"}
-knitr::include_graphics("images/tutorial_encabezado.jpg")
-```
-
-
-> Foto de Markus Winkler en [Unsplash](https://unsplash.com/photos/92HqQ0ZvKDA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
-
 
 ### Estructura propuesta
 
