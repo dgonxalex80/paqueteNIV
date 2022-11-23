@@ -1,6 +1,6 @@
 ---
-title: "Análisis descriptivo"
-author: dgonzalez80- [Web-U102]()
+title: "ANÁLISIS DESCRIPTIVO"
+author: Nivelatorio de Estadística
 output: 
   learnr::tutorial:
     css: css/learnr_metadocencia.css
@@ -16,219 +16,170 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE,
                  exercise.warn_invisible = FALSE)
 # colores
-c0="#0DA5A6" # VERDE CLARO
-c1="#E77C00" # NARANJA
-c2="#6666FF" # AZUL  
-c3="#4CBFBA" # VERDE CLARO  
-c4="#E09600" # AMARILLO  
-c5="#BC2B6A" # MORADO
+c0="#FF7F00" # naranja. color principal
+c1="#034A94" # azul fuerte. color secundario
+c2="#0EB0C6" # azul claro. color terciario  
+c3="#686868" # gris. color texto  
+
+c4="#0B2545" # azul oscuro  
+c5="#E9C46A" # amarillo
 
 ```
 
-## Presentación y Bienvenida 
+
+## PRESENTACIÓN
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
 knitr::include_graphics("images/tutorial_encabezado.jpg")
 ```
-> Foto de Markus Winkler en [Unsplash](https://unsplash.com/photos/92HqQ0ZvKDA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
+</br></br>
 
-### Estructura propuesta
+### CONCEPTOS
 
-En esta plantilla proponemos una sección de __Presentación y Bienvenida__ del curso que contiene herramientas pedagógicas pensadas para contribuir a la apertura, reuso y aprovechamiento de tus materiales de enseñanza.  Sugerimos que esta sección contenga:
+###### **INDICADORES DE POSICIÓN**
 
-* Objetivos de aprendizaje.
-* Personas Tipo
-* Licencia
-* _Opcionalmente: un mapa conceptual de los contenidos del tutorial_
+</br></br>
 
-### Descripción del curso con Objetivos de aprendizaje.
-
-La descripción del curso enumera los _contenidos_, el _orden_ y opcionalmente el _tiempo involucrado_ en cubrir cada tema.  También suele mencionar las herramientas que se utilizarán para enseñar y los elementos que las y los estudiantes necesitan tener disponibles.
-
-Un [Objetivo de aprendizaje](https://teachtogether.tech/es/index.html#s:process-objectives) describe claramente qué está intentando lograr la lección y cómo la/el estudiante demostrará lo que aprendió una vez que haya completado la lección. 
-
-#### Ejemplo de descripción y objetivos de aprendizaje
-
-<div class="note">
-
-Este tutorial te mostrará cómo crear y mejorar **gráficos de barras** con el paquete `ggplot2`. Aprenderás a:
-
-* hacer e interpretar gráficos de barras
-* personalizar gráficos de barras con **estéticas** (_aesthetics_, en inglés)
-* usar **facetas** (_facets_, en inglés) para crear subgráficos. 
-
-</div>
-
-
-### Personas tipo o ¿Quién sos vos?
-```{r, echo=FALSE, out.width="100%", fig.align = "center"}
-knitr::include_graphics("images/gentecompu.jpg")  
-```
-> [Foto de Brooke Cagle en Unsplash](https://unsplash.com/photos/C-v1p2DTakA)
-
-Las personas tipo describen el público para el que fue pensado el curso. Como se explica en el libro [Teaching Teach Together](https://teachtogether.tech/es/index.html#s:process-personas) debe contemplar los siguientes aspectos:
-
-* __los antecedentes generales__ del/la estudiante,
-* __los conocimientos y/o experiencia previa relevante__,
-* lo que estos __estudiantes creen que quieren aprender__ (versus lo que el/la docente cree que deberían aprender), y
-* cualquier __consideración especial__, como las necesidades de accesibilidad.
-
-#### Ejemplo de personas tipo 
-
-Cuando generamos esta plantilla pensamos en las siguientes personas tipo:
-
-<div class="note">
-
-__Rene:__ es docente y ha tenido que llevar su clase de introducción a R a formato virtual, esto le hace muy difícil poder ayudar a sus alumnos con la configuración de sus máquinas personales con todo el software necesario para llevar adelante la clase. Ya tiene ejercicios generados en formato rmarkdown. Con la idea de que puedan empezar a trabajar enseguida con R sin sufrir con la instalación en un inicio le parece buena idea generar tutoriales interactivos porque escuchó que se pueden publicar como una aplicación shiny.
-
-</div>
-
-
-Si quieres más ejemplos estas personas de [MetaDocencia](https://www.metadocencia.org/post/personas-tipo/), [RStudio Education](https://education.rstudio.com/blog/2020/10/learner-personas/) y [mis cursos](https://github.com/yabellini/learner_personas) pueden servirte de inspiración.
-
-
-### Licencia
-
-Los materiales que cuentan con una licencia permiten ser utilizados correctamente.  Si la licencia no figura explicitamente, por defecto el contenido es cerrado. 
-
-Sugerimos seleccionar una licencia abierta tanto para el material (texto, imágenes, videos) como para el software. 
-
-#### Material
-
-Las licencias [Creative Commons](http://www.creativecommons.org.ar/licencias.html) proveen diversos tipos  dependiendo de lo que deseamos que pueda hacer quien use nuestros materiales. Este [selector de licencias](https://creativecommons.org/choose/?lang=es_AR) puede ayudarnos a elegir la licencia que mejor se adapta a nuestras necesidades. 
-
-#### Software
-
-Para el software, existen múltiples opciones. Les presentamos tres opciones:
-
-* La [licencia MIT](https://opensource.org/licenses/MIT), que permite que los usuarios le den cualquier uso que quieran al código.
-
-* Usar la [Licencia Pública General de GNU (GPL)](https://www.gnu.org/licenses/licenses.es.html#GPL), que también permite a los usuarios hacer cualquier uso que quieran exigiendo que compartan su propio código bajo esta licencia.
-
-* La [licencia hipocrática](https://firstdonoharm.dev/version/2/1/license.html), que permite usar el código libremente siempre que el uso no viole los tratados básicos de derechos humanos.  
-
-Tengamos en cuenta que si utilizamos código de otros autores pueden existir restricciones con respecto a que licencia podemos asignar a nuestro propio código.
-
-#### Ejemplo de licencia:
-
-<div class="note">
-
-```{r, echo=FALSE, fig.align = "left"}
-knitr::include_graphics("images/CC_BY-SA_4.0.png")  
-```
-Este curso se comparte bajo la licencia [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES) y fue realizado por [Yanina Bellini Saibene](https://yabellini.netlify.app/)
-
-</div>
-
-### _Opcional: mapa conceptual_
-
-Los [mapas conceptuales](https://teachtogether.tech/es/index.html#s:memory-concept-maps) representan un modelo mental del tema que se quiere enseñar. Ayudan a las y los docentes a describir lo que quieren enseñar, brindan a otras y otros instructores una descripción general rápida de una lección y permiten a las y los estudiantes verificar que han construido el modelo mental correcto.
-
-#### Ejemplo de mapa conceptual
-
-Este mapa conceptual presenta un mapa mental del verbo `select` de tidyverse.
-
-<div class="note">
+### MAPA CONCEPTUAL
 
 ```{r, echo=FALSE, , out.width="80%", fig.align = "center"}
 knitr::include_graphics("images/mapa_conceptual.png")  
 
 ```
-Fuente: [Mapas Conceptuales RStudio](https://github.com/gvwilson/concept-maps#select) - Autores: Monica Alonso, Greg Wilson 
-</div>
 
+</br></br>
 
-En este [post](https://learning-learnr.netlify.app/post/concept_maps/) se detalla como agregar mapas conceptuales a nuestros tutoriales y en [este repo](https://github.com/rstudio/concept-maps/tree/master/es) pueden encontrar un listado de mapas conceptuales con licencia CC-BY.
-
-## Tema 1
-
-### Ejercicios
-
-*Aquí hay un ejercicio simple con un fragmento de código vacío proporcionado para ingresar la respuesta.*
-
-Escriba el código R requerido para sumar dos más dos y luego presione el botón _Run Code_:
-
-```{r dos-mas-dos, exercise=TRUE}
-
-```
-
-### Ejercicio con código para completar
-
-*Aquí hay un ejercicio con un código preescrito en el ejercicio, y el parámetro `exercise.lines = 5` para proporcionar un poco más de espacio inicial para trabajar.*
-
-Ahora escribe una función que sume dos números y luego llámela para sumar 3 + 5:
-
-```{r funcion-sumar, exercise=TRUE, exercise.lines = 5}
-sumar <- function(___,___) {
-  ______
-}
-
-sumar(___,___)
-```
-
-```{r funcion-sumar-hint}
-sumar <- function(___,___) {
-  # Aqui debe ir el calculo sumando los dos parámetros 
-  # que debe tener la función para recibir los dos números a sumar
-}
-
-sumar(___,___)
-```
-
-```{r funcion-sumar-solution}
-sumar <- function(numero1,numero2) {
-  numero1+numero2
-}
-
-sumar(5,3)
-```
-
-
-## Tema 2
-
-### Preguntas
-
-*Se puede incluir cualquier número de preguntas de opción única o múltiple. UPara esto se usa la función `question` para definir una pregunta y la función` quiz` para agrupar varias preguntas.*
+## CUESTIONARIO
 
 ```{r quiz_1}
-
 quiz(
-  question("¿Qué paquete del listado nos permite realizar gráficos?", 
-  correct = "Buen trabajo!, ggplot2 es el paquete que nos permite realizar gráficos.", 
+  question("Comparar la media con la mediana de un conjunto de datos
+te da una idea de la forma que tienen los datos", 
   allow_retry = TRUE,
-    answer("ggplot", message = "Cerca, pero no...intentalo de nuevo!"),
-    answer("gplot2", message = "Nop...intentalo de nuevo!"),
-    answer("plot2", message = "Incorrecto. Intenta de nuevo!."),
-    answer("ggplot2", correct = TRUE),
+    answer("Si la media es menor que la mediana indica que los datos presentan asimetria negativa ", correct = TRUE), 
+    answer("Esta afirmación no es cierta debido a que los dos indicadores se construyen con formulas difenetes", message = "Nop...intentalo de nuevo!"),
+    answer("La forma de los datos solo es posible conocerlo cuando se construye una grafica de ellos", message = "Incorrecto. Intenta de nuevo!."),
+    answer("Los valores de la media y la mediana no se pueden comparar, pues tienen unidades diferentes", message = "Cerca, pero no...intentalo de nuevo!"),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
-   caption = "Visualización"
+   caption = "Pregunta 1"
 )
-
 ```
 
-Otra serie de preguntas agrupadas y con más de una respuesta correcta:
+</br>
 
-```{r quiz}
-quiz(
-  question("¿Qué paquete contiene funciones para instalar otros paquetes R?",
-    answer("base"),
-    answer("tools"),
-    answer("utils", correct = TRUE),
-    answer("codetools"),
-# Si no cambiamos estos textos en los botones, se mostrarán en Inglés
-        submit_button = "Enviar respuesta",
-    try_again_button = "Intentar de nuevo"),
-  question("¿Cuál de los paquetes R enumerados a continuación se usa para crear gráficos?",
-    answer("lattice", correct = TRUE),
-    answer("tools"),
-    answer("stats"),
-    answer("grid", correct = TRUE),
-# Si no cambiamos estos textos en los botones, se mostrarán en Inglés
+```{r quiz_2}
+quiz( 
+  question("La media, moda y mediana son :", 
+  allow_retry = TRUE,
+    answer("indicadores de variabilidad", message = "No, pero no...intentalo de nuevo!"),
+    answer("indicadores de posición", message = "No...intentalo de nuevo!"),
+    answer("tres parámetros de la población", message = "Incorrecto. Intenta de nuevo!."),
+    answer("indicadores de tendencia central", correct = TRUE),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
-    try_again_button = "Intentar de nuevo")
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = "Pregunta 2"
+ )
+```
+
+</br>
+
+```{r quiz_3}
+quiz(  
+  question("¿Pregunta3?.", 
+  allow_retry = TRUE,
+    answer("Opcion1", message = "Cerca, pero no...intentalo de nuevo!"),
+    answer("Opcion2", message = "Nop...intentalo de nuevo!"),
+    answer("Opcion3", message = "Incorrecto. Intenta de nuevo!."),
+    answer("Opcion4", correct = TRUE),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = "Pregunta 3"
 )
 ```
+
+</br>
+
+```{r quiz_4}
+quiz(  
+  question("Para calcular la moda es necesario", 
+  allow_retry = TRUE,
+    answer("calcular primero la media", message = "No, pero no...intentalo de nuevo!"),
+    answer("no necesitamos tener los datos", message = "Nop...intentalo de nuevo!"),
+    answer("contar el número de veces que aparece el valor más frecuente", correct = TRUE),
+    answer("conocer el valor mínimo y el máximo de los datos", message = "Incorrecto. Intenta de nuevo!."),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = "Pregunta 4"
+)
+```
+
+</br>
+
+```{r quiz_5}
+quiz(  
+  question("Si a todos los valores de un conjunto de datos se les suma una constante positiva $m$ entonces,", 
+  allow_retry = TRUE,
+    answer("la nueva media disminuye en esa constante $m$", message = "No, ...intentalo de nuevo!"),
+    answer("la nueva media aumentará en esa constante $m$", correct = TRUE),
+    answer("la nueva media quedará multiplicada por la constante $m$", message = "Incorrecto. Intenta de nuevo!."),
+    answer("la nueva media no cambia",  message = "Incorrecto. Intenta de nuevo!."),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = "Pregunta 5"
+)
+
+```
+
+</br>
+
+```{r quiz_6}
+quiz(  
+  question("Si a todos los valores de un conjunto de datos se les suma una constante positiva $m$ entonces,", 
+  allow_retry = TRUE,
+    answer("la nueva varianza disminuye en esa constante $m$", message = "No, ...intentalo de nuevo!"),
+    answer("la nueva varianza aumentará en esa constante $m$",  message = "Incorrecto. Intenta de nuevo!."),
+    answer("la nueva varianza quedará multiplicada por la constante $m$", message = "Incorrecto. Intenta de nuevo!."),
+    answer("la nueva varianza no cambia", correct = TRUE), 
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = "Pregunta 6"
+)
+
+```
+
+</br>
+
+```{r quiz_7}
+quiz(  
+  question("Al mirar las notas de Estadı́stica observas que de los 120 almunos de la lista sólo te superan en nota 14. Puedes decir cno
+razón que:", 
+  allow_retry = TRUE,
+    answer("he superado el noveno decil", message = "No, ...intentalo de nuevo!"),
+    answer("mi nota corresponde al percentil 91",  message = "Incorrecto. Intenta de nuevo!."),
+    answer("he superado el percentil 85", correct = TRUE),  
+    answer("ninguna de las anteriores", message = "Incorrecto. Intenta de nuevo!."),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = "Pregunta 7"
+)
+
+```
+
+
+

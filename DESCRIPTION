@@ -2,10 +2,14 @@ Package: paqueteNIV
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
-Author: Who wrote it
+Authors@R: person("Daniel Enrique", 
+                  "Gonzalez Gomez", , 
+                  "dgonzalez@javerianacali.edu.co", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "YOUR-ORCID-ID"))
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: Paquete de apoyo al curso nivelatorio de estadistica
-    Contiene set de datos, funciones y tutoriales.
+Description: Paquete creado como apoyo al curso Nivelatorio de Estadística, Pontificia Universidad Javeriana Cali.
+             Contiene tambien tutoriales  y test como apoyo a los recurso para los estudiantes.  
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
