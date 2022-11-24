@@ -26,7 +26,7 @@ c5="#E9C46A" # amarillo
 
 ```
 
-## PRESENTACIÓN
+## **PRESENTACIÓN**
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
 knitr::include_graphics("images/tutorial_encabezado.jpg")
@@ -34,11 +34,11 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 
 </br></br>
 
-### CONCEPTOS
+### **CONCEPTOS**
 
 </br></br>
 
-### MAPA CONCEPTUAL
+### **MAPA CONCEPTUAL**
 
 ```{r, echo=FALSE, , out.width="80%", fig.align = "center"}
 knitr::include_graphics("images/mapa_conceptual.png")  
@@ -47,11 +47,13 @@ knitr::include_graphics("images/mapa_conceptual.png")
 
 </br></br>
 
-## CUESTIONARIO
+## **CUESTIONARIO**
 
 ```{r, echo=FALSE, out.width="50%", fig.align = "center"}
 knitr::include_graphics("images/p1.png")
 ```
+
+### PREGUNTA 1
 
 ```{r quiz_1}
 quiz(
@@ -65,11 +67,12 @@ quiz(
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
-   caption = "Pregunta 1"
+   caption = " "
 )
 ```
 
-</br>
+
+### PREGUNTA 2
 
 ```{r quiz_2}
 quiz( 
@@ -83,11 +86,12 @@ quiz(
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
-   caption = "Pregunta 2"
+   caption = " "
  )
 ```
 
-</br>
+
+### PREGUNTA 3
 
 ```{r quiz_3}
 quiz(  
@@ -101,11 +105,12 @@ quiz(
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
-   caption = "Pregunta 3"
+   caption = " "
 )
 ```
 
-</br>
+
+### PREGUNTA 4
 
 ```{r quiz_4}
 quiz(  
@@ -119,11 +124,13 @@ quiz(
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
-   caption = "Pregunta 4"
+   caption = " "
 )
 ```
 
-</br>
+
+### PREGUNTA 5
+
 
 ```{r quiz_5}
 quiz(  
@@ -137,11 +144,13 @@ quiz(
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
-   caption = "Pregunta 5"
+   caption = " "
 )
 ```
-</br>
-  
+
+
+### PREGUNTA 6
+
 ```{r quiz_6}
 quiz(  
   question("El histograma se utiliza para representar una variable", 
@@ -154,7 +163,7 @@ quiz(
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
-   caption = "Pregunta 6"
+   caption = " "
 )
 ```
 

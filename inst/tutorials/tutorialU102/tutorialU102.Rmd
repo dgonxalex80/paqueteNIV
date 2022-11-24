@@ -27,7 +27,7 @@ c5="#E9C46A" # amarillo
 ```
 
 
-## PRESENTACIÓN
+## **PRESENTACIÓN**
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
 knitr::include_graphics("images/tutorial_encabezado.jpg")
@@ -35,11 +35,10 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 
 </br></br>
 
-### CONCEPTOS
+### **CONCEPTOS**
 
 Cuando realizamos un análisis datos es necesario el calculo de indicadores que faciliten su interpretación
 
-</br>
 
 #### **INDICADORES DE POSICIÓN**
 
@@ -53,26 +52,23 @@ Estan conformado por un grupo de datos que permiten realizar comparaciones de un
 
 * Los CUARTILES, son 3 números que dividen la muestra en 4 partes cada una con un 25%.  Con estos valores se construye el diagrama de cajas
 
-</br>
 
 #### **INDICADORES DE CENTRO**
 
 Los indicadores de centro resumen en un solo número el conjunto de datos. Dentre de ellos se destacan : la media, mediana, moda, rango medio, media truncada
 
-</br>
 
 #### **INDICADORES DE DISPERSIÓN**
 
 Conformado por un grupo de indicadores que nos muestran la variabilidad de los datos. Los principales indicadores de dispersión son : el rango, la varianza, la desviación estandar y el coeficiente de variación.
 
 
-</br>
 
 #### **INDICADORES DE FORMA**
 
 Los indicadores de forma permiten analizar los datos respecto a su distribución que tiene dos dimensiones : el apuntamiento o curtosis y la asimetria o sesgo
 
-</br>
+</br></br>
 
 #### **RESUMEN DE LOS PRINCIPALES INDICADORES**
 
@@ -105,7 +101,7 @@ Los indicadores de forma permiten analizar los datos respecto a su distribución
 
 </br></br>
 
-### MAPA CONCEPTUAL
+### **MAPA CONCEPTUAL**
 
 ```{r, echo=FALSE, , out.width="80%", fig.align = "center"}
 knitr::include_graphics("images/mapa_conceptual.png")  
@@ -114,7 +110,7 @@ knitr::include_graphics("images/mapa_conceptual.png")
 
 </br></br>
 
-## CUESTIONARIO
+## **CUESTIONARIO**
 
 ### PREGUNTA 1
 
@@ -135,7 +131,7 @@ te da una idea de la forma que tienen los datos",
 )
 ```
 
-</br>
+
 
 ### PREGUNTA 2
 
@@ -155,7 +151,7 @@ quiz(
  )
 ```
 
-</br>
+
 
 ### PREGUNTA 3
 
@@ -177,7 +173,7 @@ cero puntos.",
 )
 ```
 
-</br>
+
 
 ### PREGUNTA 4
 
@@ -197,7 +193,7 @@ quiz(
 )
 ```
 
-</br>
+
 
 ### PREGUNTA 5
 
@@ -218,7 +214,7 @@ quiz(
 
 ```
 
-</br>
+
 
 ### PREGUNTA 6
 
@@ -239,7 +235,7 @@ quiz(
 
 ```
 
-</br>
+
 
 ### PREGUNTA 7
 
@@ -261,11 +257,10 @@ razón que:",
 
 ```
 
-</br>
 
-## PROBLEMAS PROPUESTOS
 
-</br>
+## **PROBLEMAS PROPUESTOS**
+
 
 ### PROBLEMA 1
 
@@ -305,7 +300,8 @@ ENUNCIADO
 
 
 ```{r p2-hint}
-prop.test(x=3,n=40, p=0.05, conf.level=0.95, alternative = "less")
+
+
 ```
 
 
