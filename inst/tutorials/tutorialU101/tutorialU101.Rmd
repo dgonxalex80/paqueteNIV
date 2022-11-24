@@ -86,6 +86,8 @@ knitr::include_graphics("images/mapa_conceptual.png")
 
 ## CUESTIONARIO
 
+### PREGUNTA 1
+
 ```{r quiz_1}
 quiz(
   question("Un estudio clasificó las personas con respecto al riesgo como: asversos al riesgo, neutral al riesgo y amantes al riesgo.
@@ -99,11 +101,13 @@ La  escala de medida utilizada es",
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
-   caption = "Pregunta 1"
+   caption = "  "
 )
 ```
 
 </br>
+
+### PREGUNTA 2
 
 ```{r quiz_2}
 quiz( 
@@ -117,11 +121,13 @@ quiz(
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
-   caption = "Pregunta 2"
+   caption = " "
  )
 ```
 
 </br>
+
+### PREGUNTA 3
 
 ```{r quiz_3}
 quiz(  
@@ -135,9 +141,27 @@ quiz(
     submit_button = "Enviar respuesta",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
-   caption = "Pregunta 3"
+   caption = " "
 )
 ```
 
 </br>
+
+### PREGUNTA 4
+
+```{r quiz_4}
+quiz(  
+  question("No conforman posibles valores de una variable cualitativa en escala ordnal", 
+  allow_retry = TRUE,
+    answer("(1, 2, 3, 4, 5)", correct = TRUE), 
+    answer("Nivel 1, Nivel 2, Nivel 3, Nivel 4, Nivel 5", message = "No, pero no...intentalo de nuevo!"),
+    answer("Muy regular, Regular, Bueno, Muy bueno, Excelente", message = "Incorrecto. Intenta de nuevo!."),
+    answer("Muy poco, Poco, Medio, Alto, Muy alto", message = "Nop...intentalo de nuevo!"),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = " "
+)
+```
 
