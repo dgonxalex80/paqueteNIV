@@ -7,7 +7,7 @@ output:
     progressive: true # los encabezados de tercer nivel (###) son revelados progresivamente     allow_skip: true # permite saltearse los ejercicios. 
     language:
       es: tutorial_es.json
-description: "Tutorial interactivo tipos de variables" # Esta descripción se ve en el panel Tutorial de RStudio 
+description: "Tutorial interactivo representación gráfica" # Esta descripción se ve en el panel Tutorial de RStudio 
 runtime: shiny_prerendered
 ---
 
@@ -35,6 +35,25 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 </br></br>
 
 ### **CONCEPTOS**
+
+La representación gráfica tiene un paple primordil en el análsis de datos. Saber representar de manera adecuada la información contenida en una base forma parte del proceso de la Ciencia de Datos.
+
+La representación de los datos está asociada con el tipo de variable y su escla de medición, además de otros factores relacionados con la modelación de lo que se desee resaltar.
+
+</br></br>
+
+|Tipo de variable  | Escala          | Gráfico                                   | código R             | 
+|:-----------------|:----------------|:------------------------------------------|:---------------------|
+|Cualitativas      |                 |                                           | `t=table(x)`         |        
+|                  |Nominal          | torta                                     | ``pie(t)`            |
+|                  |Ordinal          | barras                                    | `barplot(t)`         |
+|                  |                 |                                           |                      |
+|Cuantitativas     |Intervalo-razón  | diagrama de tallos y hojas                | `stem(x)`            |
+|                  |                 | histograma                                | `hist(x)`            |
+|                  |                 | diagrama de cajas                         | `boxplot(x)`         |
+|                  |                 | diagrama de densidad                      | `plot(density(x))`   |
+|                  |                 | diagrama de puntos                        | `plot(x)`            |
+
 
 </br></br>
 
@@ -167,3 +186,85 @@ quiz(
 )
 ```
 
+
+ ## **PROBLEMAS**
+ 
+
+### PREGUNTA 1
+
+ENUNCIADO
+
+
+```{r p1, exercise=TRUE, exercise.lines = 5}
+
+```
+
+
+```{r p1-hint}
+
+
+```
+
+
+### PREGUNTA 2
+
+ENUNCIADO
+
+
+```{r p2, exercise=TRUE, exercise.lines = 5}
+
+```
+
+
+```{r p2-hint}
+
+
+```
+
+
+### PREGUNTA 3
+
+ENUNCIADO
+
+
+```{r p3, exercise=TRUE, exercise.lines = 5}
+
+```
+
+
+```{r p3-hint}
+
+
+```
+
+
+### PREGUNTA 4
+
+ENUNCIADO
+
+
+```{r p4, exercise=TRUE, exercise.lines = 5}
+
+```
+
+
+```{r p4-hint}
+
+
+```
+
+
+### PREGUNTA 5
+
+ENUNCIADO
+
+
+```{r p5, exercise=TRUE, exercise.lines = 5}
+
+```
+
+
+```{r p5-hint}
+
+
+```

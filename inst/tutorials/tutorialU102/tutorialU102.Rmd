@@ -7,7 +7,7 @@ output:
     progressive: true # los encabezados de tercer nivel (###) son revelados progresivamente     allow_skip: true # permite saltearse los ejercicios. 
     language:
       es: tutorial_es.json
-description: "Tutorial interactivo tipos de variables" # Esta descripción se ve en el panel Tutorial de RStudio 
+description: "Tutorial interactivo análisis descriptivo" # Esta descripción se ve en el panel Tutorial de RStudio 
 runtime: shiny_prerendered
 ---
 
@@ -39,48 +39,27 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 
 Cuando realizamos un análisis datos es necesario el calculo de indicadores que faciliten su interpretación
 
+</br></br>
 
 #### **INDICADORES DE POSICIÓN**
 
-Estan conformado por un grupo de datos que permiten realizar comparaciones de un dato con respecto al grupo. Dentro de ellos se destacan :
+Estan conformado por un grupo de datos que permiten realizar comparaciones de un dato con respecto al grupo. Dentro de ellos se destacan : percentiles., deciles, quintiles, cuartiles  Con los cuartiles se construye el diagrama de cajas
 
-* Los PERCENTILES, que los conforman 99 números que dividen la muestra en 100 partes de igual porcentaje (cada uno de un 1%)
+|Indicador               | fórmula                               | código R                      |
+|:-----------------------|:--------------------------------------|:------------------------------|
+|percentil 25            |$X_{n \times 0.25}$                    |`quantile(x,0.25)`             |
+|percentil 50            |$X_{n \times 0.50}$                    |`quantile(x,0.50)`             |
+|percentil 75            |$X_{n \times 0.75}$                    |`quantile(x,0.75)`             |
+|rango intercuartílico   |$Q_{3}-Q_{1}$                          |                               |
 
-* Los DECILES, corresponden a 9 números que dividen la muestra en 10 partes de igual porcentaje (cada uno de un 10%)
-
-* Los QUINTILES,correponden a 4 números que dividen la muestra en 5 partes de igual porcentaje (cada uno de un 20%)
-
-* Los CUARTILES, son 3 números que dividen la muestra en 4 partes cada una con un 25%.  Con estos valores se construye el diagrama de cajas
-
+</br></br>
 
 #### **INDICADORES DE CENTRO**
 
 Los indicadores de centro resumen en un solo número el conjunto de datos. Dentre de ellos se destacan : la media, mediana, moda, rango medio, media truncada
 
-
-#### **INDICADORES DE DISPERSIÓN**
-
-Conformado por un grupo de indicadores que nos muestran la variabilidad de los datos. Los principales indicadores de dispersión son : el rango, la varianza, la desviación estandar y el coeficiente de variación.
-
-
-
-#### **INDICADORES DE FORMA**
-
-Los indicadores de forma permiten analizar los datos respecto a su distribución que tiene dos dimensiones : el apuntamiento o curtosis y la asimetria o sesgo
-
-</br></br>
-
-#### **RESUMEN DE LOS PRINCIPALES INDICADORES**
-
-
-|Estadística             | fórmula                               | código R                      |
+|Indicador               | fórmula                               | código R                      |
 |:-----------------------|:--------------------------------------|:------------------------------|
-|**POSICIÓN**            |                                       |                               |
-|percentil 25            |$X_{n \times 0.25}$                    |`quantile(x,0.25)`             |
-|percentil 50            |$X_{n \times 0.50}$                    |`quantile(x,0.50)`             |
-|percentil 75            |$X_{n \times 0.75}$                    |`quantile(x,0.75)`             |
-|rango intercuartílico   |$Q_{3}-Q_{1}$                          |                               |
-|**CENTRO**              |                                       |                               |
 |media aritmética        | $\displaystyle\dfrac{1}{n}\sum_{i=1}^{n} x_{i}$    | `mean(x)`        |
 |mediana                 | $Me = P_{50} = X_{n+1/2}$             | `median(x)`                   |
 |moda                    | $Mo$ dato que más se repite           |                               |
@@ -88,15 +67,32 @@ Los indicadores de forma permiten analizar los datos respecto a su distribución
 |rango medio             | $rm=\dfrac{min\{x\}-max\{x\}}{2}$     | `max(x)-min(x)`               |
 |media geométrica        | $(x_{1} \times x_{2} \times x_{3} .... x_{n})^{1/n}$  |               |
 |media armónica          | $\dfrac{n}{\dfrac{1}{x_{1}}+\dfrac{1}{x_{2}}+\dfrac{1}{x_{3}}+...+\dfrac{1}{x_{n}}}$ |  |
-|**DISPERSIÓN**          |                                       |                               |
+
+</br></br>
+
+#### **INDICADORES DE DISPERSIÓN**
+
+Conformado por un grupo de indicadores que nos muestran la variabilidad de los datos. Los principales indicadores de dispersión son : el rango, la varianza, la desviación estandar y el coeficiente de variación.
+
+
+|Indicador               | fórmula                               | código R                      |
+|:-----------------------|:--------------------------------------|:------------------------------|
 |rango                   |$r= max\{x\}-min\{x\}$                 |`max(x)-min(x)`                |
 |varianza                |$s^{2} = \dfrac{1}{n-1} \displaystyle\sum_{i=1}^{n}(x_{i}-\bar{x})^{2}$  |`var(x)` 
 |desviación estandar     |$s = \sqrt{s^{2}}$                     |`sd(x)`                        |
 |coeficiente de variación|$cv= \dfrac{s}{\bar{x}} \times 100$ %  |`sd(x)/mean(x)*100`            |
-|**FORMA**               |                                       |                               |
+
+</br></br>
+
+#### **INDICADORES DE FORMA**
+
+Los indicadores de forma permiten analizar los datos respecto a su distribución que tiene dos dimensiones : el apuntamiento o curtosis y la asimetria o sesgo
+
+|Indicador               | fórmula                               | código R                      |
+|:-----------------------|:--------------------------------------|:------------------------------|
 |coeficiente de curtosis |$\displaystyle\dfrac{Q_{3}-Q_{1}}{P_{90}-P_{10}}$ |`rapportools::kurtosis(bpe$promedio)`|
 |coeficiente de asimetría|$\displaystyle\dfrac{3(\bar{x}-Me)}{s}$|`rapportools::skewness(bpe$promedio)`|
-
+</br></br>
 
 
 </br></br>
@@ -236,7 +232,6 @@ quiz(
 ```
 
 
-
 ### PREGUNTA 7
 
 ```{r quiz_7}
@@ -272,7 +267,7 @@ data(iris)
 ```
 
 
-```{r p1-hint}
+```{r p1-solution}
 data(iris)
 mean(iris$Sepal.Length)   # media
 median(iris$Sepal.Length) # mediana
@@ -280,31 +275,59 @@ var(iris$Sepal.Length)    # varianza
 sd(iris$Sepal.Length)     # desviación estandar
 min(iris$Sepal.Length)    # mínimo
 max(iris$Sepal.Length)    # máximo
+
+
 ```
 
 
 </br>
 
-La función : summarytools::descr(iris$Sepal.Length) genera un resumen de los principales indicadores. 
-
-Nota: debe previamente haber instalado el paquete summarytools : `install.packages("summarytools")`
-
 ### PROBLEMA 2
 
-ENUNCIADO
+La siguiente información corresponde a las notas obtenidas en una prueba competencias cumputacionales realizada a un grupo de aspirantes a ingresar a una maestria.
+
+Construya un gráfico y los indicadores que le permitan caracterizar los datos
+Que porcentaje de los estudiantes reprobaron la evaluación? ($nf < 3.0$)
 
 
-```{r p2, exercise=TRUE, exercise.lines = 5}
-
+```{r p2, exercise=TRUE, exercise.lines = 10}
+nf=c(4.1, 2.7, 3.1, 3.2, 3.0, 3.2, 2.0, 2.4, 1.6, 3.2, 3.1, 2.6, 2.0, 2.4, 2.8, 
+     3.3, 4.0, 3.4, 3.0, 3.1, 2.7, 2.7, 3.0, 3.8, 3.2, 2.2, 3.5, 3.5, 3.8, 3.5, 
+     3.9, 4.2, 4.3, 3.9, 3.2, 3.5, 3.5, 3.7, 4.1, 3.7, 3.5, 3.6, 3.2, 3.1, 3.4, 
+     3.0, 3.0, 3.0, 2.7, 1.7, 3.6, 2.1, 2.4, 3.0, 3.1, 2.5, 2.5, 3.6, 2.2, 2.4,
+     3.1, 3.3, 2.7, 3.7, 3.0, 2.7, 3.0, 3.2, 3.1, 2.4, 3.0, 2.7, 2.5, 3.0, 3.0, 
+     3.0, 3.2, 3.1, 3.8, 4.1, 3.7, 3.5, 3.0, 3.7, 3.7, 4.1, 3.7, 3.9, 3.7, 2.0)
 ```
 
 
-```{r p2-hint}
-
-
+```{r p2-solution}
+library(summarytools)
+nf=c(4.1, 2.7, 3.1, 3.2, 3.0, 3.2, 2.0, 2.4, 1.6, 3.2, 3.1, 2.6, 2.0, 2.4, 2.8, 
+     3.3, 4.0, 3.4, 3.0, 3.1, 2.7, 2.7, 3.0, 3.8, 3.2, 2.2, 3.5, 3.5, 3.8, 3.5, 
+     3.9, 4.2, 4.3, 3.9, 3.2, 3.5, 3.5, 3.7, 4.1, 3.7, 3.5, 3.6, 3.2, 3.1, 3.4, 
+     3.0, 3.0, 3.0, 2.7, 1.7, 3.6, 2.1, 2.4, 3.0, 3.1, 2.5, 2.5, 3.6, 2.2, 2.4,
+     3.1, 3.3, 2.7, 3.7, 3.0, 2.7, 3.0, 3.2, 3.1, 2.4, 3.0, 2.7, 2.5, 3.0, 3.0, 
+     3.0, 3.2, 3.1, 3.8, 4.1, 3.7, 3.5, 3.0, 3.7, 3.7, 4.1, 3.7, 3.9, 3.7, 2.0)
+hist(nf)
+summarytools::descr(nf)
+sum(as.numeric(nf<3.0))/length(nf)*100
 ```
 
 
+### PREGUNTA 3
+
+Continuando con la data `iris` , los investigadores requieren visualizar si existen diferencias en cuanto al longitus  de los sepalos al comparar las tres especies que contiene la data
+
+Realice un gráfico que represente los valores de la variable iris$Sepal.Length por iris$Species 
+
+```{r 3, exercise=TRUE}
+ 
+```
+
+```{r 3-solution}
+data(iris)
+boxplot(iris$Sepal.Length ~ iris$Species)
+```
 
 
 

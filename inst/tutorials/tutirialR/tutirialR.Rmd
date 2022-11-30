@@ -1,5 +1,5 @@
 ---
-title: "Variable aleatoria"
+title: "**Introducción a R**"
 author: Nivelatorio de Estadística
 output: 
   learnr::tutorial:
@@ -36,6 +36,10 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 
 ### **CONCEPTOS**
 
+R es un lenguaje de programación para la realización de análisis estadísticos que está compuesto por un gran número de librerias. 
+
+
+
 </br></br>
 
 ### **MAPA CONCEPTUAL**
@@ -51,21 +55,80 @@ knitr::include_graphics("images/mapa_conceptual.png")
 
 ### PREGUNTA 1
 
+ENUNCIADO
 
-Existe interés por la vida de un componente electrónico. Suponga que se
-sabe que la probabilidad de que el componente funcione más de 6000 horas
-es 0.42. Suponga, además, que la probabilidad de que el componente no
-dure más de 4000 horas es 0.04.
 
-¿Cuál es la probabilidad de que la vida del componente sea menor o
-    igual a 6000 horas?
+```{r p1, exercise=TRUE, exercise.lines = 5}
 
-```{r 64a, exercise=TRUE}
- 
 ```
 
-```{r 64a-solution}
-1-0.42
+
+```{r p1-hint}
+
+
 ```
 
+
+### PREGUNTA 2
+
+ENUNCIADO
+
+
+```{r p2, exercise=TRUE, exercise.lines = 5}
+
+```
+
+
+```{r p2-hint}
+
+
+```
+
+
+### PREGUNTA 3
+
+ENUNCIADO
+
+
+```{r p3, exercise=TRUE, exercise.lines = 5}
+
+```
+
+
+```{r p3-hint}
+
+
+```
+
+
+### PREGUNTA 4
+
+ENUNCIADO
+
+
+```{r p4, exercise=TRUE, exercise.lines = 5}
+
+```
+
+
+```{r p4-hint}
+
+
+```
+
+
+### PREGUNTA 5
+
+ENUNCIADO
+
+
+```{r p5, exercise=TRUE, exercise.lines = 5}
+
+```
+
+
+```{r p5-hint}
+
+
+```
 
