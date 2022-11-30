@@ -36,19 +36,21 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 
 ### **CONCEPTOS**
 
-La representación gráfica tiene un paple primordil en el análsis de datos. Saber representar de manera adecuada la información contenida en una base forma parte del proceso de la Ciencia de Datos.
+La representación gráfica tiene un paple principal  en el análsis de datos. La representación adecuada la información contenida en una base forma parte del proceso de la Ciencia de Datos.
 
-La representación de los datos está asociada con el tipo de variable y su escla de medición, además de otros factores relacionados con la modelación de lo que se desee resaltar.
+La elección del tipo de gráfica está asociada con el tipo de variable y su escla de medición, además de otros factores relacionados con la modelación de lo que se desee resaltar.
 
 </br></br>
 
 |Tipo de variable  | Escala          | Gráfico                                   | código R             | 
 |:-----------------|:----------------|:------------------------------------------|:---------------------|
-|Cualitativas      |                 |                                           | `t=table(x)`         |        
+|**Cualitativas**  |                 |                                           |                      |  
+|                  |                 |                                           | `t=table(x)`         |        
 |                  |Nominal          | torta                                     | ``pie(t)`            |
 |                  |Ordinal          | barras                                    | `barplot(t)`         |
 |                  |                 |                                           |                      |
-|Cuantitativas     |Intervalo-razón  | diagrama de tallos y hojas                | `stem(x)`            |
+|**Cuantitativas** |                 |                                           |                      |
+|                  |Intervalo-razón  | diagrama de tallos y hojas                | `stem(x)`            |
 |                  |                 | histograma                                | `hist(x)`            |
 |                  |                 | diagrama de cajas                         | `boxplot(x)`         |
 |                  |                 | diagrama de densidad                      | `plot(density(x))`   |
@@ -192,79 +194,108 @@ quiz(
 
 ### PREGUNTA 1
 
-ENUNCIADO
+La siguiente información resumida en una tabla corresponde a la distribución de los cargos en una empresa por el sexo de sus empleados. Represente esta información de manera gráfica
 
+|              |Mujer      | Hombre       |
+|-------------:|----------:|-------------:|
+|Administrativo| 32        |  21          |        
+|Operativo     | 62        | 140          | 
+|Vendedor      | 132       | 55           |
 
-```{r p1, exercise=TRUE, exercise.lines = 5}
+```{r p1, exercise=TRUE, exercise.lines = 10}
+x=c(32,62,132,21,140,55)
+m=matrix(x,ncol=2)
+    rownames(m)=c("Adminitrativo","Operativo","Vendedor")
+    colnames(m)=c("Mujer","Hombre")
 
+    
 ```
 
 
-```{r p1-hint}
+```{r p1-solution}
+x=c(32,62,132,21,140,55)
+m=matrix(x,ncol=2)
+rownames(m)=c("Adminitrativo","Operativo","Vendedor")
+colnames(m)=c("Mujer","Hombre")
+m
 
+barplot(m, 
+        main = "Distribución del sexo por cargo",
+        col=c("#0d3b66","#FAF0CA","#f4d35e"), 
+        legend = rownames(m),
+        las=1)
+
+barplot(t(m), 
+        main = "Distribución del cargo por sexo",
+        col=c("#0d3b66","#FAF0CA"), 
+        legend = colnames(m),
+        las=1)
 
 ```
 
 
 ### PREGUNTA 2
 
-ENUNCIADO
+Los siguientes datos corresponde los tiempos empleados por 70 atletas en una carrera 10K. Determine si existen datos atípicos en los tiempos utilizando un gráfico y en caso de tenerlos determine que valor tienen
+
 
 
 ```{r p2, exercise=TRUE, exercise.lines = 5}
+x=c(51.35, 49.88, 49.35, 51.21, 51.24, 45.75, 48.42, 47.29, 48.98, 50.06, 50.94, 45.41, 55.69, 48.90, 56.00, 44.72, 56.89, 46.61, 53.25, 48.46, 49.74, 45.03, 63.02, 50.96, 50.43, 51.19, 53.45, 52.10, 49.61, 45.89, 49.76, 42.30, 53.48, 54.71, 53.48, 56.67, 44.38, 51.18, 51.06, 54.96, 64.44, 51.85, 45.33, 62.74, 43.84, 51.32, 53.70, 51.00, 52.86, 43.06, 43.63, 51.24, 52.84, 49.19, 49.56, 49.56, 51.49, 55.31, 46.74, 47.62, 51.85, 58.90, 50.80, 43.39, 48.54, 52.72, 44.82, 52.49, 58.43, 52.91)
 
 ```
 
 
 ```{r p2-hint}
+x=c(51.35, 49.88, 49.35, 51.21, 51.24, 45.75, 48.42, 47.29, 48.98, 50.06, 50.94, 45.41, 55.69, 48.90, 56.00, 44.72, 56.89, 46.61, 53.25, 48.46, 49.74, 45.03, 63.02, 50.96, 50.43, 51.19, 53.45, 52.10, 49.61, 45.89, 49.76, 42.30, 53.48, 54.71, 53.48, 56.67, 44.38, 51.18, 51.06, 54.96, 64.44, 51.85, 45.33, 62.74, 43.84, 51.32, 53.70, 51.00, 52.86, 43.06, 43.63, 51.24, 52.84, 49.19, 49.56, 49.56, 51.49, 55.31, 46.74, 47.62, 51.85, 58.90, 50.80, 43.39, 48.54, 52.72, 44.82, 52.49, 58.43, 52.91)
 
-
+boxplot(x, horizontal = TRUE)
+x[68:70]
 ```
 
 
 ### PREGUNTA 3
 
-ENUNCIADO
-
+El siguiente conjunto de datos corresponden a las edades de dos grupos de estudiantes inscritos a un programa de maestria. Determine visualmente si los dos grupos tienen iguales caracteristicas
 
 ```{r p3, exercise=TRUE, exercise.lines = 5}
+G1=c(27, 27, 28, 28, 34, 28, 26, 33, 24, 28, 25, 25, 33, 27, 34, 38, 24, 26, 22, 23, 33, 23, 26, 26, 32, 33, 29, 30, 25, 23) 
+G2=c(35, 25, 19, 17, 24, 17, 55, 25, 31, 35, 43, 28, 32, 19, 20, 17, 25, 18, 21, 22, 17, 35, 29, 20, 54, 46, 24, 29, 40, 18)
 
 ```
 
 
-```{r p3-hint}
+```{r p3-solution}
+G1=c(27, 27, 28, 28, 34, 28, 26, 33, 24, 28, 25, 25, 33, 27, 34, 38, 24, 26, 22, 23, 33, 23, 26, 26, 32, 33, 29, 30, 25, 23) 
+G2=c(35, 25, 19, 17, 24, 17, 55, 25, 31, 35, 43, 28, 32, 19, 20, 17, 25, 18, 21, 22, 17, 35, 29, 20, 54, 46, 24, 29, 40, 18)
 
-
+data=data.frame(G1,G2)
+boxplot(data)
 ```
 
 
 ### PREGUNTA 4
 
-ENUNCIADO
+Una evaluación realizada en clientes de un banco sobre su servicio en linea arrojó los siguientes resultados:
 
+* Excelente   : 32
+* Muy bueno   : 43
+* Bueno       : 12
+* Regular     : 8
+* Muy regular : 4
+
+Represente los resultados gráficamente
 
 ```{r p4, exercise=TRUE, exercise.lines = 5}
+evaluacion=c(4,  8, 12, 43, 32)
+```
+
+
+```{r p4-solution}
+ev=c(4, 8, 12, 43, 32)
+names(ev)=c("Muy regular", "Regular", "Bueno", "Muy bueno","Excelente")
+barplot(ev, col=c("#9B3A04","#DE6B07","#FF8F2D","#395F60","#203738"), main = "Evaluación servicio", las=1, ylim = c(0,50))
 
 ```
 
 
-```{r p4-hint}
-
-
-```
-
-
-### PREGUNTA 5
-
-ENUNCIADO
-
-
-```{r p5, exercise=TRUE, exercise.lines = 5}
-
-```
-
-
-```{r p5-hint}
-
-
-```
