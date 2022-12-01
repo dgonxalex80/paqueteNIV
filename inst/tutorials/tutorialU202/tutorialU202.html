@@ -123,20 +123,82 @@ if (window.hljs) {
 <h3><strong>MAPA CONCEPTUAL</strong></h3>
 <p><img src="images/mapa_conceptual.png" width="80%" style="display: block; margin: auto;" /></p>
 <p></br></br></p>
+<p></br></br></p>
 </div>
 </div>
 <div id="section-cuestionario" class="section level2">
 <h2><strong>CUESTIONARIO</strong></h2>
 <div id="section-pregunta-1" class="section level3">
 <h3>PREGUNTA 1</h3>
+<div class="panel-heading tutorial-quiz-title"></div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz_1-1" class="tutorial-question panel-body">
+<div id="quiz_1-1-answer_container" class="shiny-html-output"></div>
+<div id="quiz_1-1-message_container" class="shiny-html-output"></div>
+<div id="quiz_1-1-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+</div>
+<div id="section-pregunta-2" class="section level3">
+<h3>PREGUNTA 2</h3>
+<div class="panel-heading tutorial-quiz-title"></div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz_2-1" class="tutorial-question panel-body">
+<div id="quiz_2-1-answer_container" class="shiny-html-output"></div>
+<div id="quiz_2-1-message_container" class="shiny-html-output"></div>
+<div id="quiz_2-1-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+</div>
+<div id="section-pregunta-3" class="section level3">
+<h3>PREGUNTA 3</h3>
+<div class="panel-heading tutorial-quiz-title"></div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz_3-1" class="tutorial-question panel-body">
+<div id="quiz_3-1-answer_container" class="shiny-html-output"></div>
+<div id="quiz_3-1-message_container" class="shiny-html-output"></div>
+<div id="quiz_3-1-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+</div>
+<div id="section-pregunta-4" class="section level3">
+<h3>PREGUNTA 4</h3>
+<div class="panel-heading tutorial-quiz-title"></div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz_4-1" class="tutorial-question panel-body">
+<div id="quiz_4-1-answer_container" class="shiny-html-output"></div>
+<div id="quiz_4-1-message_container" class="shiny-html-output"></div>
+<div id="quiz_4-1-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+</div>
+<div id="section-pregunta-5" class="section level3">
+<h3>PREGUNTA 5</h3>
+<div class="panel-heading tutorial-quiz-title"></div>
+<div class="panel panel-default tutorial-question-container">
+<div data-label="quiz_5-1" class="tutorial-question panel-body">
+<div id="quiz_5-1-answer_container" class="shiny-html-output"></div>
+<div id="quiz_5-1-message_container" class="shiny-html-output"></div>
+<div id="quiz_5-1-action_button_container" class="shiny-html-output"></div>
+<script>if (Tutorial.triggerMathJax) Tutorial.triggerMathJax()</script>
+</div>
+</div>
+</div>
+</div>
+<div id="section-problemas" class="section level2">
+<h2><strong>PROBLEMAS</strong></h2>
+<div id="section-problema-1" class="section level3">
+<h3><strong>PROBLEMA 1</strong></h3>
 <p>Existe interés por la vida de un componente electrónico. Suponga que
 se sabe que la probabilidad de que el componente funcione más de 6000
 horas es 0.42. Suponga, además, que la probabilidad de que el componente
 no dure más de 4000 horas es 0.04.</p>
-<ol style="list-style-type: lower-alpha">
-<li>¿Cuál es la probabilidad de que la vida del componente sea menor o
-igual a 6000 horas?</li>
-</ol>
+<p>¿Cuál es la probabilidad de que la vida del componente sea menor o
+igual a 6000 horas?</p>
 <div class="tutorial-exercise" data-label="64a" data-completion="1"
 data-diagnostics="1" data-startover="1" data-lines="0">
 <script type="application/json" data-ui-opts="1">{"engine":"r","has_checker":false,"caption":"<span data-i18n=\"text.enginecap\" data-i18n-opts=\"{&quot;engine&quot;:&quot;R&quot;}\">R Code<\/span>"}</script>
@@ -152,12 +214,12 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE,
                  exercise.warn_invisible = FALSE)
 # colores
-c0="#0DA5A6" # VERDE CLARO
-c1="#E77C00" # NARANJA
-c2="#6666FF" # AZUL  
-c3="#4CBFBA" # VERDE CLARO  
-c4="#E09600" # AMARILLO  
-c5="#BC2B6A" # MORADO
+
+c1="#FF7F00" # NARANJA COLOR PRINCIPAL
+c2="#034a94" # AZUL FUERTE COLOR SECUNDARIO  
+c3="#0eb0c6" # AZUL CLARO COLOR TERCEARIO  
+c4="#686868" # GRIS COLOR TEXTO 
+
 
 </script>
  
@@ -182,19 +244,166 @@ session$onSessionEnded(function() {
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_1-1", question = structure("pregunta", html = TRUE, class = c("html", 
+"character")), answers = list(structure(list(id = "lnr_ans_649ef4", 
+    option = "opción 1 ", value = "opción 1 ", label = structure("opción 1", html = TRUE, class = c("html", 
+    "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_e6ee100", 
+    option = "opción 2 ", value = "opción 2 ", label = structure("opción 2", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_4ec90eb", 
+    option = "opción 4", value = "opción 4", label = structure("opción 4", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_ba6318d", 
+    option = "opción 4", value = "opción 4", label = structure("opción 4", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer"))), button_labels = list(submit = structure("Enviar respuesta", html = TRUE, class = c("html", 
+"character")), try_again = structure("Intentar de nuevo", html = TRUE, class = c("html", 
+"character"))), messages = list(correct = structure("Correcto!", html = TRUE, class = c("html", 
+"character")), try_again = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), message = NULL, post_message = NULL), ids = list(
+    answer = "quiz_1-1-answer", question = "quiz_1-1"), loading = NULL, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 1653499627.23003, 
+    options = list()), class = c("learnr_radio", "tutorial_question"
+)), session = session)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_2-1", question = structure("pregunta", html = TRUE, class = c("html", 
+"character")), answers = list(structure(list(id = "lnr_ans_222c24", 
+    option = "opción 1 ", value = "opción 1 ", label = structure("opción 1", html = TRUE, class = c("html", 
+    "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_df5a555", 
+    option = "opción 2 ", value = "opción 2 ", label = structure("opción 2", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_7775b78", 
+    option = "opción 4", value = "opción 4", label = structure("opción 4", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_823833b", 
+    option = "opción 4", value = "opción 4", label = structure("opción 4", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer"))), button_labels = list(submit = structure("Enviar respuesta", html = TRUE, class = c("html", 
+"character")), try_again = structure("Intentar de nuevo", html = TRUE, class = c("html", 
+"character"))), messages = list(correct = structure("Correcto!", html = TRUE, class = c("html", 
+"character")), try_again = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), message = NULL, post_message = NULL), ids = list(
+    answer = "quiz_2-1-answer", question = "quiz_2-1"), loading = NULL, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 1037756882.01676, 
+    options = list()), class = c("learnr_radio", "tutorial_question"
+)), session = session)
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_3-1", question = structure("pregunta", html = TRUE, class = c("html", 
+"character")), answers = list(structure(list(id = "lnr_ans_76d8256", 
+    option = "opción 1 ", value = "opción 1 ", label = structure("opción 1", html = TRUE, class = c("html", 
+    "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_97505d", 
+    option = "opción 2 ", value = "opción 2 ", label = structure("opción 2", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_efeaec0", 
+    option = "opción 4", value = "opción 4", label = structure("opción 4", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_f343ba8", 
+    option = "opción 4", value = "opción 4", label = structure("opción 4", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer"))), button_labels = list(submit = structure("Enviar respuesta", html = TRUE, class = c("html", 
+"character")), try_again = structure("Intentar de nuevo", html = TRUE, class = c("html", 
+"character"))), messages = list(correct = structure("Correcto!", html = TRUE, class = c("html", 
+"character")), try_again = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), message = NULL, post_message = NULL), ids = list(
+    answer = "quiz_3-1-answer", question = "quiz_3-1"), loading = NULL, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 918705783.572194, 
+    options = list()), class = c("learnr_radio", "tutorial_question"
+)), session = session)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_4-1", question = structure("pregunta", html = TRUE, class = c("html", 
+"character")), answers = list(structure(list(id = "lnr_ans_6acd2c3", 
+    option = "opción 1 ", value = "opción 1 ", label = structure("opción 1", html = TRUE, class = c("html", 
+    "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_72ece0", 
+    option = "opción 2 ", value = "opción 2 ", label = structure("opción 2", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_17eb400", 
+    option = "opción 4", value = "opción 4", label = structure("opción 4", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_77367fb", 
+    option = "opción 4", value = "opción 4", label = structure("opción 4", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer"))), button_labels = list(submit = structure("Enviar respuesta", html = TRUE, class = c("html", 
+"character")), try_again = structure("Intentar de nuevo", html = TRUE, class = c("html", 
+"character"))), messages = list(correct = structure("Correcto!", html = TRUE, class = c("html", 
+"character")), try_again = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), message = NULL, post_message = NULL), ids = list(
+    answer = "quiz_4-1-answer", question = "quiz_4-1"), loading = NULL, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 326045966.848173, 
+    options = list()), class = c("learnr_radio", "tutorial_question"
+)), session = session)
+</script>
+ 
+<script type="application/shiny-prerendered" data-context="server">
+learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_5-1", question = structure("", html = TRUE, class = c("html", 
+"character")), answers = list(structure(list(id = "lnr_ans_6053868", 
+    option = "opción 1 ", value = "opción 1 ", label = structure("opción 1", html = TRUE, class = c("html", 
+    "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_860f5c3", 
+    option = "opción 2 ", value = "opción 2 ", label = structure("opción 2", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_be6f305", 
+    option = "opción 4", value = "opción 4", label = structure("opción 4", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_32d8d73", 
+    option = "opción 4", value = "opción 4", label = structure("opción 4", html = TRUE, class = c("html", 
+    "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
+    "character")), type = "literal"), class = c("tutorial_question_answer", 
+"tutorial_quiz_answer"))), button_labels = list(submit = structure("Enviar respuesta", html = TRUE, class = c("html", 
+"character")), try_again = structure("Intentar de nuevo", html = TRUE, class = c("html", 
+"character"))), messages = list(correct = structure("Correcto!", html = TRUE, class = c("html", 
+"character")), try_again = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), message = NULL, post_message = NULL), ids = list(
+    answer = "quiz_5-1-answer", question = "quiz_5-1"), loading = NULL, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 821246554.117577, 
+    options = list()), class = c("learnr_radio", "tutorial_question"
+)), session = session)
+</script>
+
+
+<script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-64a-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-64a-code-editor`)), session)
 output$`tutorial-exercise-64a-output` <- renderUI({
   `tutorial-exercise-64a-result`()
 })
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::store_exercise_cache(structure(list(label = "64a", global_setup = structure(c("library(learnr)", 
 "knitr::opts_chunk$set(echo = FALSE,", "                 exercise.warn_invisible = FALSE)", 
-"# colores", "c0=\"#0DA5A6\" # VERDE CLARO", "c1=\"#E77C00\" # NARANJA", 
-"c2=\"#6666FF\" # AZUL  ", "c3=\"#4CBFBA\" # VERDE CLARO  ", 
-"c4=\"#E09600\" # AMARILLO  ", "c5=\"#BC2B6A\" # MORADO", ""), chunk_opts = list(
+"# colores", "", "c1=\"#FF7F00\" # NARANJA COLOR PRINCIPAL", 
+"c2=\"#034a94\" # AZUL FUERTE COLOR SECUNDARIO  ", "c3=\"#0eb0c6\" # AZUL CLARO COLOR TERCEARIO  ", 
+"c4=\"#686868\" # GRIS COLOR TEXTO ", "", ""), chunk_opts = list(
     label = "setup", include = FALSE)), setup = NULL, chunks = list(
     list(label = "64a", code = " ", opts = list(label = "\"64a\"", 
         exercise = "TRUE"), engine = "r")), code_check = NULL, 
@@ -229,7 +438,7 @@ learnr:::store_exercise_cache(structure(list(label = "64a", global_setup = struc
 <!--/html_preserve-->
 <!--html_preserve-->
 <script type="application/shiny-prerendered" data-context="execution_dependencies">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46]}},"value":[{"type":"character","attributes":{},"value":["backports","base","bslib","cachem","checkmate","cli","compiler","curl","datasets","digest","ellipsis","evaluate","fastmap","graphics","grDevices","highr","htmltools","htmlwidgets","httpuv","jquerylib","jsonlite","knitr","later","learnr","lifecycle","magrittr","methods","mime","promises","R6","Rcpp","rlang","rmarkdown","rprojroot","rstudioapi","sass","shiny","stats","stringi","stringr","tools","utils","withr","xfun","xtable","yaml"]},{"type":"character","attributes":{},"value":["1.4.1","4.2.2","0.4.1","1.0.6","2.1.0","3.4.1","4.2.2","4.3.3","4.2.2","0.6.30","0.3.2","0.18","1.1.0","4.2.2","4.2.2","0.9","0.5.3","1.5.4","1.6.6","0.1.4","1.8.3","1.41","1.3.0","0.11.2","1.0.3","2.0.3","4.2.2","0.12","1.2.0.1","2.5.1","1.0.9","1.0.6","2.18","2.0.3","0.14","0.4.3","1.7.3","4.2.2","1.7.8","1.4.1","4.2.2","4.2.2","2.5.0","0.35","1.8-4","2.3.6"]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48]}},"value":[{"type":"character","attributes":{},"value":["backports","base","bslib","cachem","checkmate","cli","commonmark","compiler","curl","datasets","digest","ellipsis","evaluate","fastmap","graphics","grDevices","highr","htmltools","htmlwidgets","httpuv","jquerylib","jsonlite","knitr","later","learnr","lifecycle","magrittr","markdown","methods","mime","promises","R6","Rcpp","rlang","rmarkdown","rprojroot","rstudioapi","sass","shiny","stats","stringi","stringr","tools","utils","withr","xfun","xtable","yaml"]},{"type":"character","attributes":{},"value":["1.4.1","4.2.2","0.4.1","1.0.6","2.1.0","3.4.1","1.8.1","4.2.2","4.3.3","4.2.2","0.6.30","0.3.2","0.18","1.1.0","4.2.2","4.2.2","0.9","0.5.3","1.5.4","1.6.6","0.1.4","1.8.3","1.41","1.3.0","0.11.2","1.0.3","2.0.3","1.4","4.2.2","0.12","1.2.0.1","2.5.1","1.0.9","1.0.6","2.18","2.0.3","0.14","0.4.3","1.7.3","4.2.2","1.7.8","1.4.1","4.2.2","4.2.2","2.5.0","0.35","1.8-4","2.3.6"]}]}]}
 </script>
 <!--/html_preserve-->
 </div>

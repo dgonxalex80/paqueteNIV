@@ -16,13 +16,10 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE,
                  exercise.warn_invisible = FALSE)
 # colores
-c0="#FF7F00" # naranja. color principal
-c1="#034A94" # azul fuerte. color secundario
-c2="#0EB0C6" # azul claro. color terciario  
-c3="#686868" # gris. color texto  
-
-c4="#0B2545" # azul oscuro  
-c5="#E9C46A" # amarillo
+c1="#FF7F00" # NARANJA COLOR PRINCIPAL
+c2="#034a94" # AZUL FUERTE COLOR SECUNDARIO  
+c3="#0eb0c6" # AZUL CLARO COLOR TERCEARIO  
+c4="#686868" # GRIS COLOR TEXTO 
 
 ```
 
@@ -86,6 +83,8 @@ quiz(
     answer("la muestra indica que solo un 12% de las empesas analizadas presenta un nivel tecnológico alto ", correct = TRUE),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
+      correct = "Correcto!",
+    incorrect = "Incorrecto!",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
    caption = " "
@@ -105,6 +104,8 @@ quiz(
     answer("variables cuantitativas ordinales", correct = TRUE),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
+      correct = "Correcto!",
+    incorrect = "Incorrecto!",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
    caption = " "
@@ -124,6 +125,8 @@ quiz(
     answer("si existen valores faltantes", message = "Incorrecto. Intenta de nuevo!."),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
+      correct = "Correcto!",
+    incorrect = "Incorrecto!",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
    caption = " "
@@ -143,6 +146,8 @@ quiz(
     answer("detectar que variable tiene más valores", message = "Incorrecto. Intenta de nuevo!."),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
+      correct = "Correcto!",
+    incorrect = "Incorrecto!",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
    caption = " "
@@ -163,6 +168,8 @@ quiz(
     answer("de razón", message = "No, pero no...intentalo de nuevo!"),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
+      correct = "Correcto!",
+    incorrect = "Incorrecto!",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
    caption = " "
@@ -182,6 +189,8 @@ quiz(
     answer("Cualitativa ordinal", message = "Incorrecto. Intenta de nuevo!."),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
+      correct = "Correcto!",
+    incorrect = "Incorrecto!",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
    caption = " "
@@ -189,10 +198,10 @@ quiz(
 ```
 
 
- ## **PROBLEMAS**
+## **PROBLEMAS**
  
 
-### PREGUNTA 1
+### PROBLEMA 1
 
 La siguiente información resumida en una tabla corresponde a la distribución de los cargos en una empresa por el sexo de sus empleados. Represente esta información de manera gráfica
 
@@ -234,7 +243,7 @@ barplot(t(m),
 ```
 
 
-### PREGUNTA 2
+### PROBLEMA 2
 
 Los siguientes datos corresponde los tiempos empleados por 70 atletas en una carrera 10K. Determine si existen datos atípicos en los tiempos utilizando un gráfico y en caso de tenerlos determine que valor tienen
 
@@ -254,7 +263,7 @@ x[68:70]
 ```
 
 
-### PREGUNTA 3
+### PROBLEMA 3
 
 El siguiente conjunto de datos corresponden a las edades de dos grupos de estudiantes inscritos a un programa de maestria. Determine visualmente si los dos grupos tienen iguales caracteristicas
 
@@ -274,7 +283,7 @@ boxplot(data)
 ```
 
 
-### PREGUNTA 4
+### PROBLEMA 4
 
 Una evaluación realizada en clientes de un banco sobre su servicio en linea arrojó los siguientes resultados:
 

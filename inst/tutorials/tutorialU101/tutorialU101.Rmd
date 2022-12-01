@@ -17,13 +17,10 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE,
                  exercise.warn_invisible = FALSE)
 # colores
-c0="#FF7F00" # naranja. color principal
-c1="#034A94" # azul fuerte. color secundario
-c2="#0EB0C6" # azul claro. color terciario  
-c3="#686868" # gris. color texto  
-
-c4="#0B2545" # azul oscuro  
-c5="#E9C46A" # amarillo
+c1="#FF7F00" # NARANJA COLOR PRINCIPAL
+c2="#034a94" # AZUL FUERTE COLOR SECUNDARIO  
+c3="#0eb0c6" # AZUL CLARO COLOR TERCEARIO  
+c4="#686868" # GRIS COLOR TEXTO 
 
 ```
 
@@ -35,9 +32,11 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 
 El presente tutorial contiene preguntas relacionadas con los tipos de variables y sus esclas de medición, conceptos importantes en la elección de indicadores y representación gráfica de variables
 
+</br>
+
 ### **CONCEPTOS**
 
-</br>
+
 
 #### **TIPOS DE VARIABLES**
 
@@ -51,14 +50,13 @@ El presente tutorial contiene preguntas relacionadas con los tipos de variables 
 
 **ESCALA NOMINAL** : Corresponde a valores no numéricos sin presencia de orden entre ellos. Los posibles operaciones al comparar dos valores son : $=$, $\neq$.  
 
-</br>
 
-**ESCALA ORDINAL** Corresponde a valores no numéricos con presencia de orden entre ellos. Podemos compararlos mediante los operadores : $=$, $\neq$, $<$, $>$. 
+**ESCALA ORDINAL** :  Corresponde a valores no numéricos con presencia de orden entre ellos. Podemos compararlos mediante los operadores : $=$, $\neq$, $<$, $>$. 
 
 
-**ESCALA DE INTERVALO** Este tipo de escala se aplica a variables numéricas que pueden tener diferentes esclas de medición como por ejemplo la temperatura que se mide en grados Celsius, Kelvin o Fahrengeit . Esta escala permite los operadores de comparación : $=$, $\neq$, $<$, $>$, $-$.
+**ESCALA DE INTERVALO** :  Este tipo de escala se aplica a variables numéricas que pueden tener diferentes esclas de medición como por ejemplo la temperatura que se mide en grados Celsius, Kelvin o Fahrengeit . Esta escala permite los operadores de comparación : $=$, $\neq$, $<$, $>$, $-$.
 
-**ESCALA DE RAZÓN**  |Corresponde a variables numéricas para los cuales tiene sentido a demás de los operadores anteriores, la razón de dos de sus valores : $=$, $\neq$, $<$, $>$, $-$, $/$.
+**ESCALA DE RAZÓN** : Corresponde a variables numéricas para los cuales tiene sentido a demás de los operadores anteriores, la razón de dos de sus valores : $=$, $\neq$, $<$, $>$, $-$, $/$.
 
 </br></br>
 
@@ -87,6 +85,8 @@ La  escala de medida utilizada es",
     answer("de razón", message = "Nop...intentalo de nuevo!"),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
    caption = "  "
@@ -107,6 +107,8 @@ quiz(
     answer("nivel educativo de una persona", message = "Incorrecto. Intenta de nuevo!."),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
    caption = " "
@@ -127,6 +129,8 @@ quiz(
     answer("marca del celuar que usa", message = "Nop...intentalo de nuevo!"),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
    caption = " "
@@ -147,6 +151,8 @@ quiz(
     answer("Muy poco, Poco, Medio, Alto, Muy alto", message = "Nop...intentalo de nuevo!"),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
     try_again_button = "Intentar de nuevo"),
   # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
    caption = " "

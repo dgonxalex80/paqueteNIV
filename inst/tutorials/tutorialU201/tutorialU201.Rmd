@@ -17,20 +17,17 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE,
                  exercise.warn_invisible = FALSE)
 # colores
-c0="#FF7F00" # naranja. color principal
-c1="#034A94" # azul fuerte. color secundario
-c2="#0EB0C6" # azul claro. color terciario  
-c3="#686868" # gris. color texto  
-
-c4="#0B2545" # azul oscuro  
-c5="#E9C46A" # amarillo
+c1="#FF7F00" # NARANJA COLOR PRINCIPAL
+c2="#034a94" # AZUL FUERTE COLOR SECUNDARIO  
+c3="#0eb0c6" # AZUL CLARO COLOR TERCEARIO  
+c4="#686868" # GRIS COLOR TEXTO 
 
 ```
 
 
 ## **PRESENTACIÓN**
 
-```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+```{r, echo=FALSE, out.width="80%", fig.align = "center"}
 knitr::include_graphics("images/tutorial_encabezado.jpg")
 ```
 
@@ -55,6 +52,111 @@ knitr::include_graphics("images/mapU2.png")
 
 ### PREGUNTA 1
 
+```{r quiz_1}
+quiz(  
+  question(" ", 
+  allow_retry = TRUE,
+    answer("opción 1 ", correct = TRUE), 
+    answer("opción 2 ", message = "No, pero no...intentalo de nuevo!"),
+    answer("opción 4", message = "Incorrecto. Intenta de nuevo!."),
+    answer("opción 4", message = "Nop...intentalo de nuevo!"),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = " "
+)
+```
+
+
+### PREGUNTA 2
+
+```{r quiz_2}
+quiz(  
+  question(" ", 
+  allow_retry = TRUE,
+    answer("opción 1 ", correct = TRUE), 
+    answer("opción 2 ", message = "No, pero no...intentalo de nuevo!"),
+    answer("opción 4", message = "Incorrecto. Intenta de nuevo!."),
+    answer("opción 4", message = "Nop...intentalo de nuevo!"),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = " "
+)
+```
+
+
+### PREGUNTA 3
+
+```{r quiz_3}
+quiz(  
+  question(" ", 
+  allow_retry = TRUE,
+    answer("opción 1 ", correct = TRUE), 
+    answer("opción 2 ", message = "No, pero no...intentalo de nuevo!"),
+    answer("opción 4", message = "Incorrecto. Intenta de nuevo!."),
+    answer("opción 4", message = "Nop...intentalo de nuevo!"),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = " "
+)
+```
+
+### PREGUNTA 4
+
+```{r quiz_4}
+quiz(  
+  question(" ", 
+  allow_retry = TRUE,
+    answer("opción 1 ", correct = TRUE), 
+    answer("opción 2 ", message = "No, pero no...intentalo de nuevo!"),
+    answer("opción 4", message = "Incorrecto. Intenta de nuevo!."),
+    answer("opción 4", message = "Nop...intentalo de nuevo!"),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = " "
+)
+```
+
+### PREGUNTA 5
+
+```{r quiz_5}
+quiz(  
+  question(" ", 
+  allow_retry = TRUE,
+    answer("opción 1 ", correct = TRUE), 
+    answer("opción 2 ", message = "No, pero no...intentalo de nuevo!"),
+    answer("opción 4", message = "Incorrecto. Intenta de nuevo!."),
+    answer("opción 4", message = "Nop...intentalo de nuevo!"),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = " "
+)
+```
+
+## **PROBLEMAS**
+
+### **PROBLEMA 1**
+
+
 La siguiente es una clasificación, según el género y el nivel de
 escolaridad, de una muestra aleatoria de 200 adultos.
 
@@ -64,27 +166,25 @@ escolaridad, de una muestra aleatoria de 200 adultos.
 | S: Secundaria  | 28        | 50       |
 | U: Universidad | 22        | 17       |
 
-Si se elige una persona al azar de este grupo, ¿cuál es la probabilidad
-de que la persona sea hombre, dado que su escolaridad es de secundaria?
+Si se elige una persona al azar de este grupo, ¿cuál es la probabilidad de que la persona sea hombre, dado que su escolaridad es de secundaria?
 
-```{r 75a, exercise=TRUE}
+```{r p1, exercise=TRUE}
  
 ```
 
-```{r 75a-solution}
+```{r p1-solution}
 cat("P(S) =", 78/200)
 cat("P(H | S) = P(H ∩ S) / P(S)=", (28/200)/(78/200))
 ```
 
+### PROBLEMA 2
 
-La probabilidad de que un propietario de un automovil que entra a una estación de servicio necesite cambiarle el aceite es 0.25, la probabilidad de que este mismo cliente tenga que cambiar el filtro de aire es 0.40, y la probabilidad de que se necesite cambiarle el aceite y el filtro es 0.14.
-
-Si se le tiene que cambiar el aceite, ¿cuál es la probabilidad de que también se necesite cambiarle el filtro?
+La probabilidad de que un propietario de un automovil que entra a una estación de servicio necesite cambiarle el aceite es 0.25, la probabilidad de que este mismo cliente tenga que cambiar el filtro de aire es 0.40, y la probabilidad de que se necesite cambiarle el aceite y el filtro es 0.14.  Si se le tiene que cambiar el aceite, ¿cuál es la probabilidad de que también se necesite cambiarle el filtro?
     
-```{r 80a, exercise=TRUE}
+```{r p2, exercise=TRUE}
 ```
 
-```{r 80a-solution}
+```{r p2-solution}
 cat("Sean los eventos:")
 cat("A: se necesita cambiar el aceite del vehiculo.")
 cat("F: se necesita cambiar el filtro de aceite del vehiculo.")

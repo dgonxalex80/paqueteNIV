@@ -117,9 +117,9 @@ if (window.hljs) {
 <p>El presente tutorial contiene preguntas relacionadas con los tipos de
 variables y sus esclas de medición, conceptos importantes en la elección
 de indicadores y representación gráfica de variables</p>
+<p></br></p>
 <div id="section-conceptos" class="section level3">
 <h3><strong>CONCEPTOS</strong></h3>
-<p></br></p>
 <div id="section-tipos-de-variables" class="section level4">
 <h4><strong>TIPOS DE VARIABLES</strong></h4>
 <p><strong>VARIABLE CUALITATIVA</strong> : Se clasifican como variables
@@ -140,23 +140,22 @@ cuantitativa.</p>
 sin presencia de orden entre ellos. Los posibles operaciones al comparar
 dos valores son : <span class="math inline">\(=\)</span>, <span
 class="math inline">\(\neq\)</span>.</p>
-<p></br></p>
-<p><strong>ESCALA ORDINAL</strong> Corresponde a valores no numéricos
+<p><strong>ESCALA ORDINAL</strong> : Corresponde a valores no numéricos
 con presencia de orden entre ellos. Podemos compararlos mediante los
 operadores : <span class="math inline">\(=\)</span>, <span
 class="math inline">\(\neq\)</span>, <span
 class="math inline">\(&lt;\)</span>, <span
 class="math inline">\(&gt;\)</span>.</p>
-<p><strong>ESCALA DE INTERVALO</strong> Este tipo de escala se aplica a
-variables numéricas que pueden tener diferentes esclas de medición como
-por ejemplo la temperatura que se mide en grados Celsius, Kelvin o
+<p><strong>ESCALA DE INTERVALO</strong> : Este tipo de escala se aplica
+a variables numéricas que pueden tener diferentes esclas de medición
+como por ejemplo la temperatura que se mide en grados Celsius, Kelvin o
 Fahrengeit . Esta escala permite los operadores de comparación : <span
 class="math inline">\(=\)</span>, <span
 class="math inline">\(\neq\)</span>, <span
 class="math inline">\(&lt;\)</span>, <span
 class="math inline">\(&gt;\)</span>, <span
 class="math inline">\(-\)</span>.</p>
-<p><strong>ESCALA DE RAZÓN</strong> |Corresponde a variables numéricas
+<p><strong>ESCALA DE RAZÓN</strong> : Corresponde a variables numéricas
 para los cuales tiene sentido a demás de los operadores anteriores, la
 razón de dos de sus valores : <span class="math inline">\(=\)</span>,
 <span class="math inline">\(\neq\)</span>, <span
@@ -227,13 +226,10 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE,
                  exercise.warn_invisible = FALSE)
 # colores
-c0="#FF7F00" # naranja. color principal
-c1="#034A94" # azul fuerte. color secundario
-c2="#0EB0C6" # azul claro. color terciario  
-c3="#686868" # gris. color texto  
-
-c4="#0B2545" # azul oscuro  
-c5="#E9C46A" # amarillo
+c1="#FF7F00" # NARANJA COLOR PRINCIPAL
+c2="#034a94" # AZUL FUERTE COLOR SECUNDARIO  
+c3="#0eb0c6" # AZUL CLARO COLOR TERCEARIO  
+c4="#686868" # GRIS COLOR TEXTO 
 
 </script>
  
@@ -259,29 +255,29 @@ session$onSessionEnded(function() {
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_1-1", question = structure("Un estudio clasificó las personas con respecto al riesgo como: asversos al riesgo, neutral al riesgo y amantes al riesgo.\nLa  escala de medida utilizada es", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_8f40050", 
+"character")), answers = list(structure(list(id = "lnr_ans_fe6d85", 
     option = "nominal", value = "nominal", label = structure("nominal", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Cerca, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_e7bee72", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_5deb0fa", 
     option = "ordinal", value = "ordinal", label = structure("ordinal", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_9eef47d", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_6f51c98", 
     option = "de intervalo", value = "de intervalo", label = structure("de intervalo", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_b0d805b", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_f6e8439", 
     option = "de razón", value = "de razón", label = structure("de razón", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
 "tutorial_quiz_answer"))), button_labels = list(submit = structure("Enviar respuesta", html = TRUE, class = c("html", 
 "character")), try_again = structure("Intentar de nuevo", html = TRUE, class = c("html", 
-"character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
-"character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
-"character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+"character"))), messages = list(correct = structure("Correcto!", html = TRUE, class = c("html", 
+"character")), try_again = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "quiz_1-1-answer", question = "quiz_1-1"), loading = NULL, 
-    random_answer_order = FALSE, allow_retry = TRUE, seed = 672262828.186953, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 1533289492.28601, 
     options = list()), class = c("learnr_radio", "tutorial_question"
 )), session = session)
 </script>
@@ -289,66 +285,66 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_2-1", question = structure("No es una variable cuantitativa", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_5561510", 
+"character")), answers = list(structure(list(id = "lnr_ans_e905d11", 
     option = "sexo (M,F)", value = "sexo (M,F)", label = structure("sexo (M,F)", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_8ca2fde", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_72a0132", 
     option = "bebe (nada, poco, ocasionalmente, mucho", value = "bebe (nada, poco, ocasionalmente, mucho", 
     label = structure("bebe (nada, poco, ocasionalmente, mucho", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_322489b", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_b968266", 
     option = "número de llamadas recibidas en un dia", value = "número de llamadas recibidas en un dia", 
     label = structure("número de llamadas recibidas en un dia", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_6b3d8c2", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_ad5c692", 
     option = "nivel educativo de una persona", value = "nivel educativo de una persona", 
     label = structure("nivel educativo de una persona", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
 "tutorial_quiz_answer"))), button_labels = list(submit = structure("Enviar respuesta", html = TRUE, class = c("html", 
 "character")), try_again = structure("Intentar de nuevo", html = TRUE, class = c("html", 
-"character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
-"character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
-"character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+"character"))), messages = list(correct = structure("Correcto!", html = TRUE, class = c("html", 
+"character")), try_again = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "quiz_2-1-answer", question = "quiz_2-1"), loading = NULL, 
-    random_answer_order = FALSE, allow_retry = TRUE, seed = 606976500.717355, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 1818876282.65302, 
     options = list()), class = c("learnr_radio", "tutorial_question"
 )), session = session)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_3-1", question = structure("Es una variable cualitativa medida en escal de razón", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_f444594", 
+"character")), answers = list(structure(list(id = "lnr_ans_55ad0c5", 
     option = "el nivel de ansiedad de un estudiante", value = "el nivel de ansiedad de un estudiante", 
     label = structure("el nivel de ansiedad de un estudiante", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_cbcd71d", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_40fcd6e", 
     option = "edad de una persona", value = "edad de una persona", 
     label = structure("edad de una persona", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_be96716", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_486c60d", 
     option = "programa de posgrado en el que se encuentra matriculado", 
     value = "programa de posgrado en el que se encuentra matriculado", 
     label = structure("programa de posgrado en el que se encuentra matriculado", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_4540538", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_6dfbde7", 
     option = "marca del celuar que usa", value = "marca del celuar que usa", 
     label = structure("marca del celuar que usa", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
 "tutorial_quiz_answer"))), button_labels = list(submit = structure("Enviar respuesta", html = TRUE, class = c("html", 
 "character")), try_again = structure("Intentar de nuevo", html = TRUE, class = c("html", 
-"character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
-"character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
-"character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+"character"))), messages = list(correct = structure("Correcto!", html = TRUE, class = c("html", 
+"character")), try_again = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "quiz_3-1-answer", question = "quiz_3-1"), loading = NULL, 
-    random_answer_order = FALSE, allow_retry = TRUE, seed = 1414739942.34121, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 1583456658.76265, 
     options = list()), class = c("learnr_radio", "tutorial_question"
 )), session = session)
 </script>
@@ -356,33 +352,33 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_4-1", question = structure("No conforman posibles valores de una variable cualitativa en escala ordnal", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_42192e0", 
+"character")), answers = list(structure(list(id = "lnr_ans_6c514fa", 
     option = "(1, 2, 3, 4, 5)", value = "(1, 2, 3, 4, 5)", label = structure("(1, 2, 3, 4, 5)", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_2ff5c2e", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_690a638", 
     option = "Nivel 1, Nivel 2, Nivel 3, Nivel 4, Nivel 5", value = "Nivel 1, Nivel 2, Nivel 3, Nivel 4, Nivel 5", 
     label = structure("Nivel 1, Nivel 2, Nivel 3, Nivel 4, Nivel 5", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_46ff1de", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_4d5deee", 
     option = "Muy regular, Regular, Bueno, Muy bueno, Excelente", 
     value = "Muy regular, Regular, Bueno, Muy bueno, Excelente", 
     label = structure("Muy regular, Regular, Bueno, Muy bueno, Excelente", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_499d3ea", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_6a5227b", 
     option = "Muy poco, Poco, Medio, Alto, Muy alto", value = "Muy poco, Poco, Medio, Alto, Muy alto", 
     label = structure("Muy poco, Poco, Medio, Alto, Muy alto", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
 "tutorial_quiz_answer"))), button_labels = list(submit = structure("Enviar respuesta", html = TRUE, class = c("html", 
 "character")), try_again = structure("Intentar de nuevo", html = TRUE, class = c("html", 
-"character"))), messages = list(correct = structure("Correct!", html = TRUE, class = c("html", 
-"character")), try_again = structure("Incorrect", html = TRUE, class = c("html", 
-"character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
+"character"))), messages = list(correct = structure("Correcto!", html = TRUE, class = c("html", 
+"character")), try_again = structure("Incorrecto!", html = TRUE, class = c("html", 
+"character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "quiz_4-1-answer", question = "quiz_4-1"), loading = NULL, 
-    random_answer_order = FALSE, allow_retry = TRUE, seed = 31978558.4851088, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 1584188593.7623, 
     options = list()), class = c("learnr_radio", "tutorial_question"
 )), session = session)
 </script>
