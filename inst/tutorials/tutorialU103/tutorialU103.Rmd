@@ -58,7 +58,7 @@ La elección del tipo de gráfica está asociada con el tipo de variable y su es
 
 ### **MAPA CONCEPTUAL**
 
-```{r, echo=FALSE, , out.width="80%", fig.align = "center"}
+```{r, echo=FALSE, , out.width="100%", fig.align = "center"}
 knitr::include_graphics("images/mapa_conceptual.png")  
 
 ```
@@ -67,9 +67,17 @@ knitr::include_graphics("images/mapa_conceptual.png")
 
 ## **CUESTIONARIO**
 
-```{r, echo=FALSE, out.width="50%", fig.align = "center"}
-knitr::include_graphics("images/p1.png")
+
+```{r, echo=FALSE}
+ev=c(12,40,42)
+ev=as.table(ev)
+names(ev)=c("Bajo","Medio","Alto")
+barplot(ev,  col=c("#f95738","#faf0ca", "#0d3b66"), 
+        main = "Nivel tecnológico",
+        las=1, ylim =c(0,50), ylab="%")
+grid()
 ```
+
 
 ### PREGUNTA 1
 
@@ -160,7 +168,7 @@ quiz(
 
 ```{r quiz_5}
 quiz(  
-  question("¿El diagrama de tortas se emplea para la representación de variables medidas en escala", 
+  question("El diagrama de tortas se emplea para la representación de variables medidas en escala", 
   allow_retry = TRUE,
     answer("nominal", correct = TRUE),
     answer("ordinal", message = "Nop...intentalo de nuevo!"),

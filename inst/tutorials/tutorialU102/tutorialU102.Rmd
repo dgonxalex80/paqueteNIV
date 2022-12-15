@@ -96,7 +96,7 @@ Los indicadores de forma permiten analizar los datos respecto a su distribución
 
 ### **MAPA CONCEPTUAL**
 
-```{r, echo=FALSE, , out.width="80%", fig.align = "center"}
+```{r, echo=FALSE, , out.width="100%", fig.align = "center"}
 knitr::include_graphics("images/mapa_conceptual.png")  
 
 ```
@@ -329,7 +329,7 @@ sum(as.numeric(nf<3.0))/length(nf)*100
 
 Continuando con la data `iris` , los investigadores requieren visualizar si existen diferencias en cuanto al longitus  de los sepalos al comparar las tres especies que contiene la data
 
-Realice un gráfico que represente los valores de la variable iris$Sepal.Length por iris$Species 
+Realice un gráfico que represente los valores de la variable `Sepal.Length` por `Species` 
 
 ```{r 3, exercise=TRUE}
  

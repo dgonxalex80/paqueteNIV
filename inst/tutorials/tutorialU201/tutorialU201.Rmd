@@ -33,12 +33,6 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 
 </br></br>
 
-### **CONCEPTOS**
-
-
-
-</br></br>
-
 ### **MAPA CONCEPTUAL**
 
 ```{r, echo=FALSE, , out.width="100%", fig.align = "center"}
@@ -54,12 +48,11 @@ knitr::include_graphics("images/mapU2.png")
 
 ```{r quiz_1}
 quiz(  
-  question(" ", 
-  allow_retry = TRUE,
-    answer("opción 1 ", correct = TRUE), 
-    answer("opción 2 ", message = "No, pero no...intentalo de nuevo!"),
-    answer("opción 4", message = "Incorrecto. Intenta de nuevo!."),
-    answer("opción 4", message = "Nop...intentalo de nuevo!"),
+  question("Sea P(A) = 0.50 y P(B) = 0.30, donde A y B son eventos independientes. Entonces se puede afirmar que: ", allow_retry = TRUE,
+    answer("P(A | B) = 0.50", correct = TRUE), 
+    answer("P(B | A) = 0.50 ", message = "No, pero no...intentalo de nuevo!"),
+    answer("P(A ∩ B) =0.50", message = "Incorrecto. Intenta de nuevo!."),
+    answer("P(A ∪ B)= 0.50", message = "Nop...intentalo de nuevo!"),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
     correct = "Correcto!",
@@ -75,12 +68,11 @@ quiz(
 
 ```{r quiz_2}
 quiz(  
-  question(" ", 
-  allow_retry = TRUE,
-    answer("opción 1 ", correct = TRUE), 
-    answer("opción 2 ", message = "No, pero no...intentalo de nuevo!"),
-    answer("opción 4", message = "Incorrecto. Intenta de nuevo!."),
-    answer("opción 4", message = "Nop...intentalo de nuevo!"),
+  question("Sea P(A) = 0.50 y P(B) = 0.30 y P(A ∩ B) = 0.20, podemos afirmar que",  allow_retry = TRUE,
+    answer("P(A') = 0.3", message = "Nop...intentalo de nuevo!"),
+    answer("P(B') = 0.50 ", message = "No, pero no...intentalo de nuevo!"),
+    answer("P(A ∩ B) =0.60", message = "Incorrecto. Intenta de nuevo!."),
+    answer("P(A ∩ B') =0.30", correct = TRUE), 
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
     correct = "Correcto!",
@@ -96,12 +88,11 @@ quiz(
 
 ```{r quiz_3}
 quiz(  
-  question(" ", 
-  allow_retry = TRUE,
-    answer("opción 1 ", correct = TRUE), 
-    answer("opción 2 ", message = "No, pero no...intentalo de nuevo!"),
-    answer("opción 4", message = "Incorrecto. Intenta de nuevo!."),
-    answer("opción 4", message = "Nop...intentalo de nuevo!"),
+  question("Sea P(A) = 0.50 y P(B) = 0.30 y P(A ∩ B) = 0.20, podemos afirmar que", allow_retry = TRUE,
+    answer("P(A' ∩ B) =0.20", message = "No, pero no...intentalo de nuevo!"),
+    answer("A y B no son eventos independientes", correct = TRUE), 
+    answer("A ∩ B = ϕ", message = "Incorrecto. Intenta de nuevo!."),
+    answer("A ∩ B = S", message = "Nop...intentalo de nuevo!"),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
     correct = "Correcto!",
@@ -114,14 +105,22 @@ quiz(
 
 ### PREGUNTA 4
 
+La siguiente tabla corresponde a información sobre el sexo y la preferencia de tres tipos de transporte por parte de 810 pasajeros. 
+
+```{r, echo=FALSE, , out.width="50%", fig.align = "center"}
+knitr::include_graphics("images/tabla1.png")  
+```
+
+
+
 ```{r quiz_4}
 quiz(  
-  question(" ", 
+  question("Apartir de ella se puede afirmar: ", 
   allow_retry = TRUE,
-    answer("opción 1 ", correct = TRUE), 
-    answer("opción 2 ", message = "No, pero no...intentalo de nuevo!"),
-    answer("opción 4", message = "Incorrecto. Intenta de nuevo!."),
-    answer("opción 4", message = "Nop...intentalo de nuevo!"),
+    answer("P(A ∩ C) = (190 + 12)/332", message = "Incorrecto. Intenta de nuevo!."),
+    answer("P(A ∩ B) = (190+120)/810", message = "No, pero no...intentalo de nuevo!"),
+    answer("P(H ∩ B) = 332/810", correct = TRUE),
+    answer("P(M | B) = 60/440", message = "Nop...intentalo de nuevo!"),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
     correct = "Correcto!",
@@ -136,12 +135,12 @@ quiz(
 
 ```{r quiz_5}
 quiz(  
-  question(" ", 
+  question("Para cualquier par de eventos A y B, ¿cuál de las siguientes afirmaciones no es cierta?", 
   allow_retry = TRUE,
-    answer("opción 1 ", correct = TRUE), 
-    answer("opción 2 ", message = "No, pero no...intentalo de nuevo!"),
-    answer("opción 4", message = "Incorrecto. Intenta de nuevo!."),
-    answer("opción 4", message = "Nop...intentalo de nuevo!"),
+    answer("P(S) = 1 ", message = "Incorrecto. Intenta de nuevo!."),
+    answer("P(A′) = 1 − P(A) ", message = "No, pero no...intentalo de nuevo!"),
+    answer("P(A∪B) = P(A) + P(B)", correct = TRUE), 
+    answer("0 ≤ P(A) ≤ 1", message = "Nop...intentalo de nuevo!"),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
     correct = "Correcto!",

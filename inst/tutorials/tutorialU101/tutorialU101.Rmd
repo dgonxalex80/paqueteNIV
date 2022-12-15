@@ -63,7 +63,7 @@ El presente tutorial contiene preguntas relacionadas con los tipos de variables 
 ### **MAPA CONCEPTUAL** 
 
 
-```{r, echo=FALSE, , out.width="80%", fig.align = "center"}
+```{r, echo=FALSE, , out.width="100%", fig.align = "center"}
 knitr::include_graphics("images/mapa_conceptual.png")  
 
 ```
@@ -99,7 +99,7 @@ La  escala de medida utilizada es",
 
 ```{r quiz_2}
 quiz( 
-  question("No es una variable cuantitativa", 
+  question("Es una variable cuantitativa", 
   allow_retry = TRUE,
     answer("sexo (M,F)", message = "No, pero no...intentalo de nuevo!"),
     answer("bebe (nada, poco, ocasionalmente, mucho", message = "Nop...intentalo de nuevo!"),
