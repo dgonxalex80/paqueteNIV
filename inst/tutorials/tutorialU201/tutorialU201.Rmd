@@ -71,8 +71,8 @@ quiz(
   question("Sea P(A) = 0.50 y P(B) = 0.30 y P(A ∩ B) = 0.20, podemos afirmar que",  allow_retry = TRUE,
     answer("P(A') = 0.3", message = "Nop...intentalo de nuevo!"),
     answer("P(B') = 0.50 ", message = "No, pero no...intentalo de nuevo!"),
-    answer("P(A ∩ B) =0.60", message = "Incorrecto. Intenta de nuevo!."),
-    answer("P(A ∩ B') =0.30", correct = TRUE), 
+    answer("P(A ∪ B) = 0.60" , correct = TRUE), 
+    answer("P(A ∩ B') = 0.60", message = "Incorrecto. Intenta de nuevo!."),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
     correct = "Correcto!",
@@ -117,10 +117,10 @@ knitr::include_graphics("images/tabla1.png")
 quiz(  
   question("Apartir de ella se puede afirmar: ", 
   allow_retry = TRUE,
-    answer("P(A ∩ C) = (190 + 12)/332", message = "Incorrecto. Intenta de nuevo!."),
-    answer("P(A ∩ B) = (190+120)/810", message = "No, pero no...intentalo de nuevo!"),
-    answer("P(H ∩ B) = 332/810", correct = TRUE),
-    answer("P(M | B) = 60/440", message = "Nop...intentalo de nuevo!"),
+    answer("P(A ∩ H) = 190/332", message = "Incorrecto. Intenta de nuevo!."),
+    answer("P(A ∩ M) = 60/478", message = "No, pero no...intentalo de nuevo!"),
+    answer("P(H ∩ B) = 120/810", correct = TRUE),
+    answer("P(M | B) = 280/810", message = "Nop...intentalo de nuevo!"),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
     correct = "Correcto!",
