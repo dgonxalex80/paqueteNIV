@@ -13,3 +13,4 @@ Description: Paquete creado como apoyo al curso Nivelatorio de Estadística, Pon
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends: R (>= 2.10)
