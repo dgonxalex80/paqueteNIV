@@ -63,8 +63,8 @@ El presente tutorial contiene preguntas relacionadas con los tipos de variables 
 ### **MAPA CONCEPTUAL** 
 
 
-```{r, echo=FALSE, , out.width="100%", fig.align = "center"}
-knitr::include_graphics("images/mapa_conceptual.png")  
+```{r, echo=FALSE, , out.width="70%", fig.align = "center"}
+knitr::include_graphics("images/mapa_conceptual2.png")  
 
 ```
 
