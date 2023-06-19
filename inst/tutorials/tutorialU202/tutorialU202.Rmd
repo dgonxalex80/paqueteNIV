@@ -36,44 +36,100 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 
 ### **CONCEPTOS**
 
-* **variable aleatoria** : función que asigna a cada elemento de un espacio muestral asociado a un experimento aleatorio un número
-
-* **variable aleatoria discreta** : variable cuyo conjunto de valores posibles (rango) es un conjunto finito o infinito numerable
-
-* **variable aleatoria continua** : variable cuyo conjunto de valores posibles es un conjunto infinito de valores no numerables
-
-* **función de distribución de probabilidad** : función que asigna a cada valor de una variable aleatoria discreta un valor de probabilidad. $f(x)\geq 0$ y $\sum_{R_{X}} f(x) =1$
-
-* **función de densidad de probabilidad** : función que asigna a cada valor de la variable aletoria contunua un valor- $f(x)\geq0$ y $\int f(x) =1$
-
-* **función de probabilidad acumulada** : $F(x) = P(X \leq x)$
-
-* **valor esperado** : $E[X]$ media poblacional
-
-* **varianza** : $V[X]$ varianza poblacional
-
-* **modelos discretos**
-
-|                 |                 |                 |                 |                 |                 | 
-|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
-| Bernoulli       | Binomial        | Poisson         | Hipergeométrico | Geométrico o de Pascal | Binomial negativo|
-|                 |                 |                 |                 |                 |                 | 
+*Una variable aleatoria se puede definir como una función que asocia valores numéricos a eventos resultantes de un experimento aleatorio*
 
 
-* **modelos continuos**
+</br>
 
-|                 |                 |                 |                 |                 |                 | 
-|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
-| Uniforme        |   Normal        |  Exponencial    |  Gamma          |  Weibull        | Cauchy          |
-| Lognormal       |   Beta          | Erlang          |  Gumbel         |  Kernel	        |                 |
-|                 |                 |                 |                 |                 |                 |
+#### **variable aleatoria** : 
+
+función que asigna a cada elemento de un espacio muestral asociado a un experimento aleatorio un número
+
+</br>
+
+#### **variable aleatoria discreta** : 
+
+variable cuyo conjunto de valores posibles (rango) es un conjunto finito o infinito numerable
+
+</br>
+
+####  **variable aleatoria continua** : 
+
+variable cuyo conjunto de valores posibles es un conjunto infinito de valores no numerables
+
+</br>
+
+####  **función de distribución de probabilidad** : 
+
+función que asigna a cada valor de una variable aleatoria discreta un valor de probabilidad. 
+
+* $f(x)\geq 0$ 
+* $\displaystyle \sum_{R_{X}} f(x) =1$
+
+</br>
+
+#### **función de densidad de probabilidad** : 
+
+función que asigna a cada valor de la variable aletoria contunua un valor. 
+
+* $f(x)\geq0$  
+* $\displaystyle \int f(x) \hspace{.2cm}dx =1$
+
+</br>
+
+#### **función de probabilidad acumulada** : 
+
+$F(x) = P(X \leq x)$
+
+
+</br>
+
+#### **valor esperado** : 
+
+$E[X] = \mu$ media poblacional
+
+</br>
+
+#### **varianza** : 
+
+$V[X] = \sigma^2$ : varianza poblacional
+
+</br></br>
+
+#### **modelos discretos**
+
+* Bernoulli        
+* binomial         
+* Poisson         
+* hipergeométrico 
+* geométrico o de Pascal 
+* binomial negativo
+
+</br></br>
+
+#### **modelos continuos**
+
+* uniforme        
+* normal        
+* exponencial     
+* gamma          
+* Weibull        
+* Cauchy          
+* lognormal       
+* beta          
+* Erlang          
+* Gumbel         
+* t-Student      
+* F               
+* ji-cuadrado   
+* empírica o kernel
 
 </br></br>
 
 ### **MAPA CONCEPTUAL**
 
-```{r, echo=FALSE, , out.width="80%", fig.align = "center"}
-knitr::include_graphics("images/mapa_conceptual.png")  
+```{r, echo=FALSE, , out.width="100%", fig.align = "center"}
+knitr::include_graphics("images/mapU3.png")  
 
 ```
 
