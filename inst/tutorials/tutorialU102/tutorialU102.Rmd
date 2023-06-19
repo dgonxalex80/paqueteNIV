@@ -62,8 +62,8 @@ Los indicadores de centro resumen en un solo número el conjunto de datos. Dentr
 |moda                    | $Mo$ dato que más se repite           |                               |
 |media truncada | media calculada con el 90% central de los datos|`mean(x,trim=10/100)`          |
 |rango medio             | $rm=\dfrac{min\{x\}-max\{x\}}{2}$     | `max(x)-min(x)`               |
-|media geométrica        | $(x_{1} \times x_{2} \times x_{3} .... x_{n})^{1/n}$  |               |
-|media armónica          | $\dfrac{n}{\dfrac{1}{x_{1}}+\dfrac{1}{x_{2}}+\dfrac{1}{x_{3}}+...+\dfrac{1}{x_{n}}}$ |  |
+|media geométrica        | $(x_{1} \times x_{2} \times x_{3} .... x_{n})^{1/n}$  | `geometric<-function(x){exp(sum(log(x))/length(x))}` |
+|media armónica          | $\dfrac{n}{\dfrac{1}{x_{1}}+\dfrac{1}{x_{2}}+\dfrac{1}{x_{3}}+...+\dfrac{1}{x_{n}}}$ | `armonic<- function(x){1/mean(1/x)}`|
 
 </br></br>
 
