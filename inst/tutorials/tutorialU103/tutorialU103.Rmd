@@ -45,21 +45,20 @@ La elección del tipo de gráfica está asociada con el tipo de variable y su es
 |                  |                 |                                           | `t=table(x)`         |        
 |                  |Nominal          | torta                                     | ``pie(t)`            |
 |                  |Ordinal          | barras                                    | `barplot(t)`         |
-|                  |                 |                                           |                      |
 |**Cuantitativas** |                 |                                           |                      |
 |                  |Intervalo-razón  | diagrama de tallos y hojas                | `stem(x)`            |
 |                  |                 | histograma                                | `hist(x)`            |
 |                  |                 | diagrama de cajas                         | `boxplot(x)`         |
 |                  |                 | diagrama de densidad                      | `plot(density(x))`   |
 |                  |                 | diagrama de puntos                        | `plot(x)`            |
-
+|                  |                 |                                           |                      |
 
 </br></br>
 
 ### **MAPA CONCEPTUAL**
 
 ```{r, echo=FALSE, , out.width="100%", fig.align = "center"}
-knitr::include_graphics("images/mapa_conceptual.png")  
+knitr::include_graphics("images/graficos.png")  
 
 ```
 
@@ -240,12 +239,14 @@ barplot(m,
         main = "Distribución del sexo por cargo",
         col=c("#0d3b66","#FAF0CA","#f4d35e"), 
         legend = rownames(m),
+        ylim = c(0,300),
         las=1)
 
 barplot(t(m), 
         main = "Distribución del cargo por sexo",
         col=c("#0d3b66","#FAF0CA"), 
         legend = colnames(m),
+        ylim = c(0,300),
         las=1)
 
 ```
@@ -314,5 +315,82 @@ names(ev)=c("Muy regular", "Regular", "Bueno", "Muy bueno","Excelente")
 barplot(ev, col=c("#9B3A04","#DE6B07","#FF8F2D","#395F60","#203738"), main = "Evaluación servicio", las=1, ylim = c(0,50))
 
 ```
+
+
+
+
+
+### PROBLEMA 5
+
+El resultado de una encuesta de clima laboral arrojo los siguientes resultados:
+
+|Pregunta | TA| A | N | D| TD |
+|         | 3 | 4 | 2 | 5 | 2 |
+|         | 4  | 3 | 5 | 2 | 4 |
+|         | 2 |  5| 3 | 4 | 3 |
+
+Donde:
+TD : Totalmente en desacuerdo
+D : En desacuerdo
+N : Neutral 
+A : De acuerdo
+TA : Totalmente de acuerdo
+
+Represente los resultados gráficamente
+
+```{r p5, exercise=TRUE, exercise.lines = 15}
+library(likert)
+library(ggplot2)
+
+data <- data.frame(
+  Pregunta1 = c(3, 4, 2, 5, 2),
+  Pregunta2 = c(4, 3, 5, 2, 4),
+  Pregunta3 = c(2, 5, 3, 4, 3)
+)
+
+labels <- c("Totalmente en desacuerdo", "En desacuerdo", "Neutral", "De acuerdo", "Totalmente de acuerdo")
+
+```
+
+
+```{r p5-solution}
+library(likert)
+library(ggplot2)
+
+# Crear un dataframe de ejemplo
+data <- data.frame(
+  Pregunta1 = factor(c(3, 4, 2, 5, 2)),
+  Pregunta2 = factor(c(4, 3, 5, 2, 4)),
+  Pregunta3 = factor(c(2, 5, 3, 4, 3))
+)
+
+order <- c("Pregunta1", "Pregunta2", "Pregunta3")
+lbls <- c("Totalmente en desacuerdo", "En desacuerdo", "Neutral", "De acuerdo", "Totalmente de acuerdo")
+likert_data <- likert(data)
+likert_data$labels <- lbls
+likert_plot <- plot(likert_data)
+print(likert_plot)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

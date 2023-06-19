@@ -34,7 +34,8 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 
 ### **CONCEPTOS**
 
-Cuando realizamos un análisis datos es necesario el calculo de indicadores que faciliten su interpretación
+Cuando realizamos un análisis datos es necesario el calculo de indicadores que faciliten su interpretación. Para el caso de las variables cualitativas se utiliza como indicador de resument la moda. Los siguientes indicadores corresponde a variables cuantitativas. 
+
 
 </br></br>
 
@@ -48,6 +49,9 @@ Estan conformado por un grupo de datos que permiten realizar comparaciones de un
 |percentil 50            |$X_{n \times 0.50}$                    |`quantile(x,0.50)`             |
 |percentil 75            |$X_{n \times 0.75}$                    |`quantile(x,0.75)`             |
 |rango intercuartílico   |$Q_{3}-Q_{1}$                          |                               |
+|                        |                                       |                               |
+
+
 
 </br></br>
 
@@ -64,6 +68,7 @@ Los indicadores de centro resumen en un solo número el conjunto de datos. Dentr
 |rango medio             | $rm=\dfrac{min\{x\}-max\{x\}}{2}$     | `max(x)-min(x)`               |
 |media geométrica        | $(x_{1} \times x_{2} \times x_{3} .... x_{n})^{1/n}$  | `geometric<-function(x){exp(sum(log(x))/length(x))}` |
 |media armónica          | $\dfrac{n}{\dfrac{1}{x_{1}}+\dfrac{1}{x_{2}}+\dfrac{1}{x_{3}}+...+\dfrac{1}{x_{n}}}$ | `armonic<- function(x){1/mean(1/x)}`|
+|                        |                                       |                               |
 
 </br></br>
 
@@ -78,6 +83,7 @@ Conformado por un grupo de indicadores que nos muestran la variabilidad de los d
 |varianza                |$s^{2} = \dfrac{1}{n-1} \displaystyle\sum_{i=1}^{n}(x_{i}-\bar{x})^{2}$  |`var(x)` 
 |desviación estandar     |$s = \sqrt{s^{2}}$                     |`sd(x)`                        |
 |coeficiente de variación|$cv= \dfrac{s}{\bar{x}} \times 100$ %  |`sd(x)/mean(x)*100`            |
+|                        |                                       |                               |
 
 </br></br>
 
@@ -89,6 +95,8 @@ Los indicadores de forma permiten analizar los datos respecto a su distribución
 |:-----------------------|:--------------------------------------|:------------------------------|
 |coeficiente de curtosis |$\displaystyle\dfrac{Q_{3}-Q_{1}}{P_{90}-P_{10}}$ |`rapportools::kurtosis(bpe$promedio)`|
 |coeficiente de asimetría|$\displaystyle\dfrac{3(\bar{x}-Me)}{s}$|`rapportools::skewness(bpe$promedio)`|
+|                        |                                       |                                     |
+
 </br></br>
 
 
@@ -97,7 +105,7 @@ Los indicadores de forma permiten analizar los datos respecto a su distribución
 ### **MAPA CONCEPTUAL**
 
 ```{r, echo=FALSE, , out.width="100%", fig.align = "center"}
-knitr::include_graphics("images/mapa_conceptual.png")  
+knitr::include_graphics("images/variables.png")  
 
 ```
 
