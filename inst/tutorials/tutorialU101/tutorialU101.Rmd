@@ -159,3 +159,125 @@ quiz(
 )
 ```
 
+
+
+
+### PREGUNTA 5
+
+```{r quiz_5}
+quiz(  
+  question("La variable estado civil corresponde a una variable medida en escala:  ", 
+  allow_retry = TRUE,
+    answer("Nominal", correct = TRUE), 
+    answer("Ordinal ", message = "No, pero no...intentalo de nuevo!"),
+    answer("De intervalo", message = "Incorrecto. Intenta de nuevo!."),
+    answer("De razón", message = "No...intentalo de nuevo!"),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = " "
+)
+```
+
+
+
+
+
+
+### PREGUNTA 6
+
+```{r quiz_6}
+quiz(  
+  question("La temperatura de una persona medida en grados Celsius, correspnde a una variable medida en escala: ", 
+  allow_retry = TRUE,
+    answer("Nominal",message = "No...intentalo de nuevo!"), 
+    answer("Ordinal ", message = "No, pero no...intentalo de nuevo!"),
+    answer("De intervalo ", correct = TRUE),  
+    answer("De razón",message = "Incorrecto. Intenta de nuevo!."),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = " "
+)
+```
+
+
+
+
+
+
+
+### PREGUNTA 7
+
+```{r quiz_7}
+quiz(  
+  question("El peso de una persona medido en kilogramos, corresponde a una variable medida en escala: ", 
+  allow_retry = TRUE,
+    answer("Nominal", message = "No...intentalo de nuevo!"),
+    answer("Ordinal", message = "No, pero no...intentalo de nuevo!"),
+    answer("De intervalo", message = "Incorrecto. Intenta de nuevo!."),
+    answer("De razón", correct = TRUE),  
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = " "
+)
+```
+
+
+
+
+
+
+### PREGUNTA 8
+
+```{r quiz_8}
+quiz(  
+  question("El nivel educativo de una persona (primaria, secundaria, universidad) es una variable medida en escala:   ", 
+  allow_retry = TRUE,
+    answer("Nominal"  , message = "No, pero no...intentalo de nuevo!"),
+    answer("Ordinal", correct = TRUE),
+    answer("De intervalo", message = "Incorrecto. Intenta de nuevo!."),
+    answer("De razón", message = "No...intentalo de nuevo!"),
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = " "
+)
+```
+
+
+### PREGUNTA 9
+
+```{r quiz_9}
+quiz(  
+  question("La talla de una persona en centimetros es una variable medida en escala :", 
+  allow_retry = TRUE,
+    answer("Nominala", message = "No...intentalo de nuevo!"),
+    answer("Ordinal", message = "No, pero no...intentalo de nuevo!"),
+    answer("De intervalo", message = "Incorrecto. Intenta de nuevo!."),
+    answer("De razón" , correct = TRUE), 
+    # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
+    submit_button = "Enviar respuesta",
+    correct = "Correcto!",
+    incorrect = "Incorrecto!",
+    try_again_button = "Intentar de nuevo"),
+  # Si no ponemos un caption aparecerá la palabra Quiz en inglés.
+   caption = " "
+)
+```
+
+
+
