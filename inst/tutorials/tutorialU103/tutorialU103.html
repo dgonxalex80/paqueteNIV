@@ -299,32 +299,13 @@ modelación de lo que se desee resaltar.</p>
 <p>La siguiente información resumida en una tabla corresponde a la
 distribución de los cargos en una empresa por el sexo de sus empleados.
 Represente esta información de manera gráfica</p>
-<table>
-<thead>
-<tr class="header">
-<th align="right"></th>
-<th align="right">Mujer</th>
-<th align="right">Hombre</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">Administrativo</td>
-<td align="right">32</td>
-<td align="right">21</td>
-</tr>
-<tr class="even">
-<td align="right">Operativo</td>
-<td align="right">62</td>
-<td align="right">140</td>
-</tr>
-<tr class="odd">
-<td align="right">Vendedor</td>
-<td align="right">132</td>
-<td align="right">55</td>
-</tr>
-</tbody>
-</table>
+<pre>
+|              |Mujer      | Hombre       |
+|--------------+-----------+--------------|
+|Administrativo| 32        |  21          |        
+|Operativo     | 62        | 140          | 
+|Vendedor      | 132       | 55           |
+</pre>
 <div class="tutorial-exercise" data-label="p1" data-completion="1"
 data-diagnostics="1" data-startover="1" data-lines="10">
 <pre class="text"><code>x=c(32,62,132,21,140,55)
@@ -402,13 +383,13 @@ boxplot(data)</code></pre>
 <h3>PROBLEMA 4</h3>
 <p>Una evaluación realizada en clientes de un banco sobre su servicio en
 linea arrojó los siguientes resultados:</p>
-<ul>
-<li>Excelente : 32</li>
-<li>Muy bueno : 43</li>
-<li>Bueno : 12</li>
-<li>Regular : 8</li>
-<li>Muy regular : 4</li>
-</ul>
+<pre>
+* Excelente   : 32
+* Muy bueno   : 43
+* Bueno       : 12
+* Regular     : 8
+* Muy regular : 4
+</pre>
 <p>Represente los resultados gráficamente</p>
 <div class="tutorial-exercise" data-label="p4" data-completion="1"
 data-diagnostics="1" data-startover="1" data-lines="5">
@@ -427,8 +408,13 @@ barplot(ev, col=c(&quot;#9B3A04&quot;,&quot;#DE6B07&quot;,&quot;#FF8F2D&quot;,&q
 <h3>PROBLEMA 5</h3>
 <p>El resultado de una encuesta de clima laboral arrojo los siguientes
 resultados:</p>
-<p>|Pregunta | TA| A | N | D| TD | | | 3 | 4 | 2 | 5 | 2 | | | 4 | 3 | 5
-| 2 | 4 | | | 2 | 5| 3 | 4 | 3 |</p>
+<pre>
+|Pregunta | TA |  A | N | D | TD |
+|---------+----+----+---+---+----|
+| 1       | 3  |  4 | 2 | 5 | 2  |
+| 2       | 4  |  3 | 5 | 2 | 4  |
+| 3       | 2  |  5 | 3 | 4 | 3  |
+</pre>
 <p>Donde: TD : Totalmente en desacuerdo D : En desacuerdo N : Neutral A
 : De acuerdo TA : Totalmente de acuerdo</p>
 <p>Represente los resultados gráficamente</p>
@@ -501,25 +487,25 @@ session$onSessionEnded(function() {
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_1-1", question = structure("A partir de la gráfica anterior se puede afirmar que:", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_e1d0181", 
+"character")), answers = list(structure(list(id = "lnr_ans_6a617a5", 
     option = "el nivel tecnológico en promedio es de (12+40+42)/3", 
     value = "el nivel tecnológico en promedio es de (12+40+42)/3", 
     label = structure("el nivel tecnológico en promedio es de (12+40+42)/3", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_53f5c63", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_bbf6a2d", 
     option = "el nivel tecnológico presenta un valor medio o promedio igual 40%", 
     value = "el nivel tecnológico presenta un valor medio o promedio igual 40%", 
     label = structure("el nivel tecnológico presenta un valor medio o promedio igual 40%", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_c682dca", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_4e537af", 
     option = "el nivel tecnológico es una variable cualitativa de escala nominal y presenta una moda igual a bajo", 
     value = "el nivel tecnológico es una variable cualitativa de escala nominal y presenta una moda igual a bajo", 
     label = structure("el nivel tecnológico es una variable cualitativa de escala nominal y presenta una moda igual a bajo", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_768dd8b", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_9960871", 
     option = "la muestra indica que solo un 12% de las empesas analizadas presenta un nivel tecnológico alto ", 
     value = "la muestra indica que solo un 12% de las empesas analizadas presenta un nivel tecnológico alto ", 
     label = structure("la muestra indica que solo un 12% de las empesas analizadas presenta un nivel tecnológico alto", html = TRUE, class = c("html", 
@@ -531,7 +517,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 "character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "quiz_1-1-answer", question = "quiz_1-1"), loading = NULL, 
-    random_answer_order = FALSE, allow_retry = TRUE, seed = 73709395.4656764, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 429368126.30006, 
     options = list()), class = c("learnr_radio", "tutorial_question"
 )), session = session)
 </script>
@@ -539,22 +525,22 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_2-1", question = structure("El diagrama de barras se utiliza para representar", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_d568330", 
+"character")), answers = list(structure(list(id = "lnr_ans_6965382", 
     option = "variables cualitativas de razón", value = "variables cualitativas de razón", 
     label = structure("variables cualitativas de razón", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_fc1f8e4", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_1e9e2dc", 
     option = "variables cuantitativas discretas", value = "variables cuantitativas discretas", 
     label = structure("variables cuantitativas discretas", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_d209533", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_163443d", 
     option = "variables cuantitativas continuas", value = "variables cuantitativas continuas", 
     label = structure("variables cuantitativas continuas", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_343cf57", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_76b050", 
     option = "variables cuantitativas ordinales", value = "variables cuantitativas ordinales", 
     label = structure("variables cuantitativas ordinales", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
@@ -565,28 +551,28 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 "character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "quiz_2-1-answer", question = "quiz_2-1"), loading = NULL, 
-    random_answer_order = FALSE, allow_retry = TRUE, seed = 626392262.708313, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 1191949075.94496, 
     options = list()), class = c("learnr_radio", "tutorial_question"
 )), session = session)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_3-1", question = structure("El diagrama de cajas permite", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_d02d493", 
+"character")), answers = list(structure(list(id = "lnr_ans_e66c7ed", 
     option = "visualizar la media de los datos", value = "visualizar la media de los datos", 
     label = structure("visualizar la media de los datos", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_da7cc65", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_231cc99", 
     option = "estimar la varianza de los datos", value = "estimar la varianza de los datos", 
     label = structure("estimar la varianza de los datos", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_adbfe2c", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_f4377ed", 
     option = "detectar los valores atípicos", value = "detectar los valores atípicos", 
     label = structure("detectar los valores atípicos", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_829eb8a", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_64569b7", 
     option = "si existen valores faltantes", value = "si existen valores faltantes", 
     label = structure("si existen valores faltantes", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
@@ -598,7 +584,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 "character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "quiz_3-1-answer", question = "quiz_3-1"), loading = NULL, 
-    random_answer_order = FALSE, allow_retry = TRUE, seed = 1355713881.8687, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 170137371.420774, 
     options = list()), class = c("learnr_radio", "tutorial_question"
 )), session = session)
 </script>
@@ -606,22 +592,22 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_4-1", question = structure("El diagrama de dispersión permite esencialmente", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_ae4c423", 
+"character")), answers = list(structure(list(id = "lnr_ans_22bba06", 
     option = "detectar datos atípicos de una variable", value = "detectar datos atípicos de una variable", 
     label = structure("detectar datos atípicos de una variable", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Cerca, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_c9ab593", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_ca2adca", 
     option = "que tancerca estan los datos de la media", value = "que tancerca estan los datos de la media", 
     label = structure("que tancerca estan los datos de la media", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_cd6168a", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_1e8cc31", 
     option = "detectar el grado de asociación entre dos variables cuantitativas", 
     value = "detectar el grado de asociación entre dos variables cuantitativas", 
     label = structure("detectar el grado de asociación entre dos variables cuantitativas", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_192bd78", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_374dfa", 
     option = "detectar que variable tiene más valores", value = "detectar que variable tiene más valores", 
     label = structure("detectar que variable tiene más valores", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
@@ -633,25 +619,25 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 "character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "quiz_4-1-answer", question = "quiz_4-1"), loading = NULL, 
-    random_answer_order = FALSE, allow_retry = TRUE, seed = 16305928.992407, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 126538649.941076, 
     options = list()), class = c("learnr_radio", "tutorial_question"
 )), session = session)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_5-1", question = structure("El diagrama de tortas se emplea para la representación de variables medidas en escala", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_c2e68", 
+"character")), answers = list(structure(list(id = "lnr_ans_5909d1", 
     option = "nominal", value = "nominal", label = structure("nominal", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_23f6731", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_49023e9", 
     option = "ordinal", value = "ordinal", label = structure("ordinal", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_e7242ba", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_e43def4", 
     option = "de intervalo", value = "de intervalo", label = structure("de intervalo", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_21cc4f2", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_2130321", 
     option = "de razón", value = "de razón", label = structure("de razón", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("No, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
@@ -662,7 +648,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 "character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "quiz_5-1-answer", question = "quiz_5-1"), loading = NULL, 
-    random_answer_order = FALSE, allow_retry = TRUE, seed = 106779861.950277, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 2074220981.03412, 
     options = list()), class = c("learnr_radio", "tutorial_question"
 )), session = session)
 </script>
@@ -670,21 +656,21 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_6-1", question = structure("El histograma se utiliza para representar una variable", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_31b07fb", 
+"character")), answers = list(structure(list(id = "lnr_ans_3e5a96a", 
     option = "Cualitativa nominal", value = "Cualitativa nominal", 
     label = structure("Cualitativa nominal", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Cerca, pero no…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_8819f01", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_193290d", 
     option = "Cuantitativa ordinal", value = "Cuantitativa ordinal", 
     label = structure("Cuantitativa ordinal", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Nop…intentalo de nuevo!", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_8d07a9f", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_4b48f8d", 
     option = "Cuantitativa continua", value = "Cuantitativa continua", 
     label = structure("Cuantitativa continua", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_a2a0472", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_5e98fc6", 
     option = "Cualitativa ordinal", value = "Cualitativa ordinal", 
     label = structure("Cualitativa ordinal", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Incorrecto. Intenta de nuevo!.", html = TRUE, class = c("html", 
@@ -696,7 +682,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 "character")), incorrect = structure("Incorrecto!", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "quiz_6-1-answer", question = "quiz_6-1"), loading = NULL, 
-    random_answer_order = FALSE, allow_retry = TRUE, seed = 1976825874.07947, 
+    random_answer_order = FALSE, allow_retry = TRUE, seed = 847175799.105503, 
     options = list()), class = c("learnr_radio", "tutorial_question"
 )), session = session)
 </script>

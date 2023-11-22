@@ -34,6 +34,12 @@ El presente tutorial contiene preguntas relacionadas con los tipos de variables 
 
 </br>
 
+
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("images/tipo_variables.png")
+```
+
 ### **CONCEPTOS**
 
 
@@ -41,6 +47,7 @@ El presente tutorial contiene preguntas relacionadas con los tipos de variables 
 
 ### **TIPOS DE VARIABLES**
 
+Las variables se puede clasificar de acuerdo a su origen, relación, 
 </br>
 
 #### **VARIABLE CUALITATIVA** :    

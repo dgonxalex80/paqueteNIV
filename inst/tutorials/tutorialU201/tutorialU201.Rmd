@@ -159,11 +159,13 @@ quiz(
 La siguiente es una clasificación, según el género y el nivel de
 escolaridad, de una muestra aleatoria de 200 adultos.
 
+<pre>
 | Escolaridad    | H: Hombre | M: Mujer |
-|----------------|:---------:|:--------:|
+|----------------+-----------+----------|
 | P: Primaria    | 38        | 45       |
 | S: Secundaria  | 28        | 50       |
 | U: Universidad | 22        | 17       |
+</pre>
 
 Si se elige una persona al azar de este grupo, ¿cuál es la probabilidad de que la persona sea hombre, dado que su escolaridad es de secundaria?
 

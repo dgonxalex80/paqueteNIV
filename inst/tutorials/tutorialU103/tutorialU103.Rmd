@@ -212,11 +212,15 @@ quiz(
 
 La siguiente información resumida en una tabla corresponde a la distribución de los cargos en una empresa por el sexo de sus empleados. Represente esta información de manera gráfica
 
+<pre>
 |              |Mujer      | Hombre       |
-|-------------:|----------:|-------------:|
+|--------------+-----------+--------------|
 |Administrativo| 32        |  21          |        
 |Operativo     | 62        | 140          | 
 |Vendedor      | 132       | 55           |
+</pre>
+
+
 
 ```{r p1, exercise=TRUE, exercise.lines = 10}
 x=c(32,62,132,21,140,55)
@@ -296,11 +300,13 @@ boxplot(data)
 
 Una evaluación realizada en clientes de un banco sobre su servicio en linea arrojó los siguientes resultados:
 
+<pre>
 * Excelente   : 32
 * Muy bueno   : 43
 * Bueno       : 12
 * Regular     : 8
 * Muy regular : 4
+</pre>
 
 Represente los resultados gráficamente
 
@@ -324,10 +330,13 @@ barplot(ev, col=c("#9B3A04","#DE6B07","#FF8F2D","#395F60","#203738"), main = "Ev
 
 El resultado de una encuesta de clima laboral arrojo los siguientes resultados:
 
-|Pregunta | TA| A | N | D| TD |
-|         | 3 | 4 | 2 | 5 | 2 |
-|         | 4  | 3 | 5 | 2 | 4 |
-|         | 2 |  5| 3 | 4 | 3 |
+<pre>
+|Pregunta | TA |  A | N | D | TD |
+|---------+----+----+---+---+----|
+| 1       | 3  |  4 | 2 | 5 | 2  |
+| 2       | 4  |  3 | 5 | 2 | 4  |
+| 3       | 2  |  5 | 3 | 4 | 3  |
+</pre>
 
 Donde:
 TD : Totalmente en desacuerdo
