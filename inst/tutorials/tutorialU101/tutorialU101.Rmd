@@ -36,7 +36,7 @@ El presente tutorial contiene preguntas relacionadas con los tipos de variables 
 
 
 
-```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+```{r, echo=FALSE, out.width="60%", fig.align = "center"}
 knitr::include_graphics("images/tipo_variables.png")
 ```
 
@@ -126,8 +126,6 @@ La  escala de medida utilizada es",
 )
 ```
 
-
-
 ### PREGUNTA 2
 
 ```{r quiz_2}
@@ -147,8 +145,6 @@ quiz(
    caption = " "
  )
 ```
-
-
 
 ### PREGUNTA 3
 
@@ -170,12 +166,6 @@ quiz(
 )
 ```
 
-
-
-
-
-
-
 ### PREGUNTA 4
 
 ```{r quiz_4}
@@ -195,9 +185,6 @@ quiz(
    caption = " "
 )
 ```
-
-
-
 
 ### PREGUNTA 5
 
@@ -219,11 +206,6 @@ quiz(
 )
 ```
 
-
-
-
-
-
 ### PREGUNTA 6
 
 ```{r quiz_6}
@@ -243,12 +225,6 @@ quiz(
    caption = " "
 )
 ```
-
-
-
-
-
-
 
 ### PREGUNTA 7
 
@@ -270,11 +246,6 @@ quiz(
 )
 ```
 
-
-
-
-
-
 ### PREGUNTA 8
 
 ```{r quiz_8}
@@ -295,7 +266,6 @@ quiz(
 )
 ```
 
-
 ### PREGUNTA 9
 
 ```{r quiz_9}
@@ -315,6 +285,92 @@ quiz(
    caption = " "
 )
 ```
+
+
+
+
+## **PROBLEMAS PROPUESTOS**
+
+
+### PROBLEMA 1
+
+Crea un vector que represente  el ID de una base de datos que contiene  100 registros
+
+
+```{r p1, exercise=TRUE, exercise.lines = 10}
+
+
+```
+
+
+```{r p1-solution}
+ID = 1:100
+ID
+
+```
+
+
+</br>
+
+### PROBLEMA 2
+
+Crea un data.frame que además del identificador (ID) contenga la edad en añoñs de la persona.  Utiliza la función `rnorm()` para simular valores  a partir de una distribución normal con media 25 años y desviación 5 años (aproximando el valor a números enteros)
+
+
+```{r p2, exercise=TRUE, exercise.lines = 10}
+
+```
+
+
+```{r p2-solution}
+base = data.frame(ID = 1:100,
+                  Edad = round(rnorm(100, 25,5),0))
+
+base
+
+
+```
+
+
+### PREGUNTA 3
+
+Ahora adiciona una variable que represente la valoración del servicio prestado en un servicio de transporte (Excelente, Muy bueno, Bueno, Regular, Muy Regular), teniendo en cuenta que la distribución de estos resultados es : 0.28,0.50, 0.15, 0.05, 0.02). Utilice para ello la función `sample()`
+
+
+```{r 3, exercise=TRUE}
+ 
+
+```
+
+```{r 3-solution}
+califica = c("Excelente", "Muy bueno", "Bueno", "Regular", "Muy Regular")
+base = data.frame(ID = 1:100,
+                  Edad = round(rnorm(100, 25,5),0),
+                  calificacion = sample(califica, 100, replace = TRUE, prob = c(0.28,0.50, 0.15, 0.05, 0.02)))
+
+base
+
+```
+
+
+
+### PREGUNTA 4
+
+Importa la base de datos `swiss` contenida en R y verifica el tipo de variables que contiene
+
+
+```{r 4, exercise=TRUE}
+ 
+
+```
+
+```{r 4-solution}
+data("swiss")
+str(swiss)
+```
+
+
+
 
 
 
