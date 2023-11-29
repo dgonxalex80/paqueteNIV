@@ -34,14 +34,24 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 
 ### **CONCEPTOS**
 
-Cuando realizamos un análisis datos es necesario el calculo de indicadores que faciliten su interpretación. Para el caso de las variables cualitativas se utiliza como indicador de resument la moda. Los siguientes indicadores corresponde a variables cuantitativas. 
+Cuando realizamos un análisis datos es necesario el calculo de indicadores que faciliten su interpretación. Para el caso de las variables cualitativas se utiliza como indicador de resumen la moda. Los siguientes indicadores corresponde a variables cuantitativas. 
 
 
 </br></br>
 
 #### **INDICADORES DE POSICIÓN**
 
-Estan conformado por un grupo de datos que permiten realizar comparaciones de un dato con respecto al grupo. Dentro de ellos se destacan : percentiles., deciles, quintiles, cuartiles  Con los cuartiles se construye el diagrama de cajas
+Estan conformado por un grupo de datos que permiten realizar comparaciones de un dato con respecto al grupo. Dentro de ellos se destacan : 
+
+* percentiles, 
+* deciles, 
+* quintiles, 
+* cuartiles  
+
+
+### **Nota**
+
+Con los cuartiles tambien se construye el diagrama de cajas
 
 |Indicador               | fórmula                               | código R                      |
 |:-----------------------|:--------------------------------------|:------------------------------|
@@ -115,13 +125,15 @@ knitr::include_graphics("images/variables.png")
 
 ### PREGUNTA 1
 
+Para la siguiente afirmación selecciona la opción correcta 
+
 ```{r quiz_1}
 quiz(
   question("Comparar la media con la mediana de un conjunto de datos
 te da una idea de la forma que tienen los datos", 
   allow_retry = TRUE,
     answer("Si la media es menor que la mediana indica que los datos presentan asimetria negativa ", correct = TRUE), 
-    answer("Esta afirmación no es cierta debido a que los dos indicadores se construyen con formulas difenetes", message = "Nop...intentalo de nuevo!"),
+    answer("Estos indicadores no se pueden comparar debido a que se construyen con fórmulas diferentes", message = "No...intentalo de nuevo!"),
     answer("La forma de los datos solo es posible conocerla cuando se construye una grafica de ellos", message = "Incorrecto. Intenta de nuevo!."),
     answer("Los valores de la media y la mediana no se pueden comparar, pues tienen unidades diferentes", message = "Cerca, pero no...intentalo de nuevo!"),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
@@ -253,8 +265,7 @@ quiz(
 
 ```{r quiz_7}
 quiz(  
-  question("Al mirar las notas de Estadı́stica observas que de los 120 almunos de la lista sólo te superan en nota 14. Puedes decir cno
-razón que:", 
+  question("Al entregar los resultados del cursos de Estadística, observas que de los 120 compañeros del curso, sólo te superan en calificación 14 de ellos. Puedes concluir que :", 
   allow_retry = TRUE,
     answer("he superado el noveno decil", message = "No, ...intentalo de nuevo!"),
     answer("mi nota corresponde al percentil 91",  message = "Incorrecto. Intenta de nuevo!."),
@@ -303,10 +314,11 @@ max(iris$Sepal.Length)    # máximo
 
 ### PROBLEMA 2
 
-La siguiente información corresponde a las notas obtenidas en una prueba competencias cumputacionales realizada a un grupo de aspirantes a ingresar a una maestria.
+La siguiente información corresponde a las notas obtenidas en una prueba de competencias cumputacionales realizada a un grupo de aspirantes que quieren ingresar a una maestria.
 
-Construya un gráfico y los indicadores que le permitan caracterizar los datos
-Que porcentaje de los estudiantes reprobaron la evaluación? ($nf < 3.0$)
+Construya un gráfico y los indicadores que le permitan caracterizar los datos.
+
+¿Qué porcentaje de los estudiantes reprobaron la evaluación? (nota final  < 3.0)
 
 
 ```{r p2, exercise=TRUE, exercise.lines = 10}
@@ -335,7 +347,7 @@ sum(as.numeric(nf<3.0))/length(nf)*100
 
 ### PREGUNTA 3
 
-Continuando con la data `iris` , los investigadores requieren visualizar si existen diferencias en cuanto al longitus  de los sepalos al comparar las tres especies que contiene la data
+Continuando con la data `iris` , los investigadores requieren visualizar si existen diferencias en cuanto a la longitud  de los sepalos al comparar las tres especies que contiene la data.
 
 Realice un gráfico que represente los valores de la variable `Sepal.Length` por `Species` 
 

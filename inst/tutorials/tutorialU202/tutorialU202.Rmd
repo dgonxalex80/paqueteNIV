@@ -41,25 +41,25 @@ knitr::include_graphics("images/tutorial_encabezado.jpg")
 
 </br>
 
-#### **variable aleatoria** : 
+#### **Variable aleatoria** : 
 
 función que asigna a cada elemento de un espacio muestral asociado a un experimento aleatorio un número
 
 </br>
 
-#### **variable aleatoria discreta** : 
+#### **Variable aleatoria discreta** : 
 
 variable cuyo conjunto de valores posibles (rango) es un conjunto finito o infinito numerable
 
 </br>
 
-####  **variable aleatoria continua** : 
+####  **Variable aleatoria continua** : 
 
 variable cuyo conjunto de valores posibles es un conjunto infinito de valores no numerables
 
 </br>
 
-####  **función de distribución de probabilidad** : 
+####  **Función de distribución de probabilidad** : 
 
 función que asigna a cada valor de una variable aleatoria discreta un valor de probabilidad. 
 

@@ -87,7 +87,7 @@ quiz(
     answer("el nivel tecnológico en promedio es de (12+40+42)/3", message = "No, pero no...intentalo de nuevo!"),
     answer("el nivel tecnológico presenta un valor medio o promedio igual 40%", message = "Nop...intentalo de nuevo!"),
     answer("el nivel tecnológico es una variable cualitativa de escala nominal y presenta una moda igual a bajo", message = "Incorrecto. Intenta de nuevo!."),
-    answer("la muestra indica que solo un 12% de las empesas analizadas presenta un nivel tecnológico alto ", correct = TRUE),
+    answer("la muestra indica que solo un 12% de las empesas analizadas presenta un nivel tecnológico bajo", correct = TRUE),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",
       correct = "Correcto!",
@@ -148,8 +148,8 @@ quiz(
   question("El diagrama de dispersión permite esencialmente", 
   allow_retry = TRUE,
     answer("detectar datos atípicos de una variable", message = "Cerca, pero no...intentalo de nuevo!"),
-    answer("que tancerca estan los datos de la media", message = "Nop...intentalo de nuevo!"),
-    answer("detectar el grado de asociación entre dos variables cuantitativas", correct = TRUE),
+    answer("que tan cerca estan los datos de la media", message = "No...intentalo de nuevo!"),
+    answer("detectar el grado de asociación lineal entre dos variables cuantitativas", correct = TRUE),
     answer("detectar que variable tiene más valores", message = "Incorrecto. Intenta de nuevo!."),
     # Si no cambiamos estos textos en los botones, se mostrarán en Inglés  
     submit_button = "Enviar respuesta",

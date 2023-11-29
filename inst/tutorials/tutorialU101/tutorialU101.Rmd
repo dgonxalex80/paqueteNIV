@@ -47,16 +47,16 @@ knitr::include_graphics("images/tipo_variables.png")
 
 ### **TIPOS DE VARIABLES**
 
-Las variables se puede clasificar de acuerdo a su origen, relación, 
+Las variables se puede clasificar de acuerdo a su origen, relación,... 
 </br>
 
-#### **VARIABLE CUALITATIVA** :    
+#### **VARIABLE CUALITATIVA**  
 
 Se clasifican como variables cualitativas aquellas que toman valores no numéricos que pueden corresponde a factores o niveles de una variable aleatoria 
 
 </br>
 
-#### **VARIABLE CUANTITATIVA** : 
+#### **VARIABLE CUANTITATIVA** 
 
 Son valores numéricos que pueden estar relacionados con mediciones y conteo de eventos. En otros casos son utilizadas de manera temporal para cuantificar variables no observables directamente y que se valoran a traves de test o cuestionarios con preguntas de opción multiple que puntuan de manera sumativa como son los casos del clima laboral, estres entre otros. Este proceso se denomina operacionalización de una variable cualitativa como cuantitativa. 
 
@@ -272,7 +272,7 @@ quiz(
 quiz(  
   question("La talla de una persona en centimetros es una variable medida en escala :", 
   allow_retry = TRUE,
-    answer("Nominala", message = "No...intentalo de nuevo!"),
+    answer("Nominal", message = "No...intentalo de nuevo!"),
     answer("Ordinal", message = "No, pero no...intentalo de nuevo!"),
     answer("De intervalo", message = "Incorrecto. Intenta de nuevo!."),
     answer("De razón" , correct = TRUE), 
@@ -314,7 +314,7 @@ ID
 
 ### PROBLEMA 2
 
-Crea un data.frame que además del identificador (ID) contenga la edad en añoñs de la persona.  Utiliza la función `rnorm()` para simular valores  a partir de una distribución normal con media 25 años y desviación 5 años (aproximando el valor a números enteros)
+Crea un data.frame que además del identificador (ID) contenga la edad en años de la persona.  Utiliza la función `rnorm()` para simular valores  a partir de una distribución normal con media 25 años y desviación 5 años (aproximando el valor a números enteros)
 
 
 ```{r p2, exercise=TRUE, exercise.lines = 10}
@@ -334,7 +334,7 @@ base
 
 ### PREGUNTA 3
 
-Ahora adiciona una variable que represente la valoración del servicio prestado en un servicio de transporte (Excelente, Muy bueno, Bueno, Regular, Muy Regular), teniendo en cuenta que la distribución de estos resultados es : 0.28,0.50, 0.15, 0.05, 0.02). Utilice para ello la función `sample()`
+Ahora adiciona una variable que represente la valoración del servicio de transporte prestado (Excelente, Muy bueno, Bueno, Regular, Muy Regular), teniendo en cuenta que la distribución de estos resultados es : 0.28,0.50, 0.15, 0.05, 0.02. Utilice para ello la función `sample()`
 
 
 ```{r 3, exercise=TRUE}
