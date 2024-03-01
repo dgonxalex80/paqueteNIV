@@ -1,6 +1,6 @@
 Package: paqueteNIV
 Type: Package
-Title: What the Package Does (Title Case)
+Title: paqueteNIV
 Version: 0.1.0
 Authors@R: person("Daniel Enrique", 
                   "Gonzalez Gomez", , 
@@ -18,3 +18,5 @@ Imports:
     ggplot2,
     likert,
     summarytools
+
+    
